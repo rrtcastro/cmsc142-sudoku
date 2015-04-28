@@ -147,9 +147,25 @@ int main(int argc, char *argv[]){
 			move++;
 			nopts[move]=0;
 			if(move==numOfZero+1){
+				printf("Possible solution set:\n");
+			
+				a=1;
 				for(i=1;i<move;i++)
 					printf("%2i", option[i][nopts[i]]);
-				printf("\n");			
+				printf("\n\n");
+				
+				for(i=0;i<sizeOfBoard;i++){
+					for(j=0;j<sizeOfBoard;j++){
+						if(board[i][j]==0){
+							printf("%2i", option[a][nopts[a]]);
+							a++;
+						}
+						else
+							printf("%2i", board[i][j]);
+					}
+					printf("\n");
+				}
+				printf("\n\n");			
 			}
 			else if(move==1){
 				for(candidate=sizeOfBoard;candidate>=1;candidate--){
