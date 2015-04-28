@@ -170,8 +170,9 @@ int main(int argc, char *argv[]){
 					box=checkBox(candidate, blankSpaces[move-1], board);
 					
 					if(row && column && box){
-						for(i=move-1;i>=1;i--)
-							if(candidate==option[i][nopts[i]]) break;
+						for(i=move-1;i>=1;i--){
+							if(candidate==option[i][nopts[i]] && (blankSpaces[i-1].x==blankSpaces[move-1].x || blankSpaces[i-1].y==blankSpaces[move-1].y || (blankSpaces[i-1].x/3==blankSpaces[move-1].x/3 && blankSpaces[i-1].y/3==blankSpaces[move-1].y/3))) break;
+						}
 						if(i==0)
 							option[move][++nopts[move]]=candidate;
 					}
