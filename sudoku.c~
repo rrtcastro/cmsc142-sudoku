@@ -1,6 +1,5 @@
 #include<stdio.h>
 #include<stdlib.h>
-#include<math.h>
 #define sizeOfBoard 4
 
 typedef struct node{
@@ -42,8 +41,8 @@ int checkBox(int candidate, list blankSpace, int **board){
 	int y = blankSpace.y;
 	int x = blankSpace.x;
 	
-	int gridx = (int)(x/sqrt(sizeOfBoard));
-	int gridy = (int)(y/sqrt(sizeOfBoard));
+	int gridx = x/sqrt(sizeOfBoard);
+	int gridy = y/sqrt(sizeOfBoard);
 	
 	for(i=0+(gridy*sqrt(sizeOfBoard)); i<sqrt(sizeOfBoard)+(gridy*sqrt(sizeOfBoard)); i++){
 	
@@ -115,7 +114,6 @@ void createArrayOfZero(list **blankSpaces, int **board, int numOfZero){
 
 int main(int argc, char *argv[]){
 
-	int count = 0;
 	int start,move;
 	int *nopts;//nopts[N+2];//n options // top of stacks
 	int **option;//option[N+2][N+2]; //options //stacks
@@ -149,8 +147,6 @@ int main(int argc, char *argv[]){
 			move++;
 			nopts[move]=0;
 			if(move==numOfZero+1){
-				count++;
-				printf("Solution number %d\n", count);
 				printf("Possible solution set:\n");
 			
 				a=1;
@@ -191,9 +187,7 @@ int main(int argc, char *argv[]){
 					
 					if(row && column && box){
 						for(i=move-1;i>=1;i--){
-							if(candidate==option[i][nopts[i]] && (blankSpaces[i-1].x==blankSpaces[move-1].x || 
-								blankSpaces[i-1].y==blankSpaces[move-1].y || ((int)(blankSpaces[i-1].x/sqrt(sizeOfBoard))==(int)(blankSpaces[move-1].x/sqrt(sizeOfBoard)) && 
-									(int)(blankSpaces[i-1].y/sqrt(sizeOfBoard))==(int)(blankSpaces[move-1].y/sqrt(sizeOfBoard))))) break;
+							if(candidate==option[i][nopts[i]] && (blankSpaces[i-1].x==blankSpaces[move-1].x || blankSpaces[i-1].y==blankSpaces[move-1].y || (blankSpaces[i-1].x/sqrt(sizeOfBoard)==blankSpaces[move-1].x/sqrt(sizeOfBoard) && blankSpaces[i-1].y/sqrt(sizeOfBoard)==blankSpaces[move-1].y/sqrt(sizeOfBoard)))) break;
 						}
 						if(i==0)
 							option[move][++nopts[move]]=candidate;
