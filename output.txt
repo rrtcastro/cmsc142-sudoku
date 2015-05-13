@@ -1,35 +1,5 @@
 Solution number 1
 Possible solution set:
- 1 2 3 4 3 4 1 2 2 1 4 3 4 3 2 1
-
- 1 2 3 4
- 3 4 1 2
- 2 1 4 3
- 4 3 2 1
-
-
-Solution number 2
-Possible solution set:
- 1 2 3 4 3 4 1 2 2 3 4 1 4 1 2 3
-
- 1 2 3 4
- 3 4 1 2
- 2 3 4 1
- 4 1 2 3
-
-
-Solution number 3
-Possible solution set:
- 1 2 3 4 3 4 1 2 4 1 2 3 2 3 4 1
-
- 1 2 3 4
- 3 4 1 2
- 4 1 2 3
- 2 3 4 1
-
-
-Solution number 4
-Possible solution set:
  1 2 3 4 3 4 1 2 4 3 2 1 2 1 4 3
 
  1 2 3 4
@@ -38,47 +8,7 @@ Possible solution set:
  2 1 4 3
 
 
-Solution number 5
-Possible solution set:
- 1 2 3 4 3 4 2 1 2 1 4 3 4 3 1 2
-
- 1 2 3 4
- 3 4 2 1
- 2 1 4 3
- 4 3 1 2
-
-
-Solution number 6
-Possible solution set:
- 1 2 3 4 3 4 2 1 4 3 1 2 2 1 4 3
-
- 1 2 3 4
- 3 4 2 1
- 4 3 1 2
- 2 1 4 3
-
-
-Solution number 7
-Possible solution set:
- 1 2 3 4 4 3 1 2 2 1 4 3 3 4 2 1
-
- 1 2 3 4
- 4 3 1 2
- 2 1 4 3
- 3 4 2 1
-
-
-Solution number 8
-Possible solution set:
- 1 2 3 4 4 3 1 2 3 4 2 1 2 1 4 3
-
- 1 2 3 4
- 4 3 1 2
- 3 4 2 1
- 2 1 4 3
-
-
-Solution number 9
+Solution number 2
 Possible solution set:
  1 2 3 4 4 3 2 1 2 1 4 3 3 4 1 2
 
@@ -88,57 +18,7 @@ Possible solution set:
  3 4 1 2
 
 
-Solution number 10
-Possible solution set:
- 1 2 3 4 4 3 2 1 2 4 1 3 3 1 4 2
-
- 1 2 3 4
- 4 3 2 1
- 2 4 1 3
- 3 1 4 2
-
-
-Solution number 11
-Possible solution set:
- 1 2 3 4 4 3 2 1 3 1 4 2 2 4 1 3
-
- 1 2 3 4
- 4 3 2 1
- 3 1 4 2
- 2 4 1 3
-
-
-Solution number 12
-Possible solution set:
- 1 2 3 4 4 3 2 1 3 4 1 2 2 1 4 3
-
- 1 2 3 4
- 4 3 2 1
- 3 4 1 2
- 2 1 4 3
-
-
-Solution number 13
-Possible solution set:
- 1 2 4 3 3 4 1 2 2 1 3 4 4 3 2 1
-
- 1 2 4 3
- 3 4 1 2
- 2 1 3 4
- 4 3 2 1
-
-
-Solution number 14
-Possible solution set:
- 1 2 4 3 3 4 1 2 4 3 2 1 2 1 3 4
-
- 1 2 4 3
- 3 4 1 2
- 4 3 2 1
- 2 1 3 4
-
-
-Solution number 15
+Solution number 3
 Possible solution set:
  1 2 4 3 3 4 2 1 2 1 3 4 4 3 1 2
 
@@ -148,67 +28,7 @@ Possible solution set:
  4 3 1 2
 
 
-Solution number 16
-Possible solution set:
- 1 2 4 3 3 4 2 1 2 3 1 4 4 1 3 2
-
- 1 2 4 3
- 3 4 2 1
- 2 3 1 4
- 4 1 3 2
-
-
-Solution number 17
-Possible solution set:
- 1 2 4 3 3 4 2 1 4 1 3 2 2 3 1 4
-
- 1 2 4 3
- 3 4 2 1
- 4 1 3 2
- 2 3 1 4
-
-
-Solution number 18
-Possible solution set:
- 1 2 4 3 3 4 2 1 4 3 1 2 2 1 3 4
-
- 1 2 4 3
- 3 4 2 1
- 4 3 1 2
- 2 1 3 4
-
-
-Solution number 19
-Possible solution set:
- 1 2 4 3 4 3 1 2 2 1 3 4 3 4 2 1
-
- 1 2 4 3
- 4 3 1 2
- 2 1 3 4
- 3 4 2 1
-
-
-Solution number 20
-Possible solution set:
- 1 2 4 3 4 3 1 2 2 4 3 1 3 1 2 4
-
- 1 2 4 3
- 4 3 1 2
- 2 4 3 1
- 3 1 2 4
-
-
-Solution number 21
-Possible solution set:
- 1 2 4 3 4 3 1 2 3 1 2 4 2 4 3 1
-
- 1 2 4 3
- 4 3 1 2
- 3 1 2 4
- 2 4 3 1
-
-
-Solution number 22
+Solution number 4
 Possible solution set:
  1 2 4 3 4 3 1 2 3 4 2 1 2 1 3 4
 
@@ -218,57 +38,7 @@ Possible solution set:
  2 1 3 4
 
 
-Solution number 23
-Possible solution set:
- 1 2 4 3 4 3 2 1 2 1 3 4 3 4 1 2
-
- 1 2 4 3
- 4 3 2 1
- 2 1 3 4
- 3 4 1 2
-
-
-Solution number 24
-Possible solution set:
- 1 2 4 3 4 3 2 1 3 4 1 2 2 1 3 4
-
- 1 2 4 3
- 4 3 2 1
- 3 4 1 2
- 2 1 3 4
-
-
-Solution number 25
-Possible solution set:
- 1 3 2 4 2 4 1 3 3 1 4 2 4 2 3 1
-
- 1 3 2 4
- 2 4 1 3
- 3 1 4 2
- 4 2 3 1
-
-
-Solution number 26
-Possible solution set:
- 1 3 2 4 2 4 1 3 3 2 4 1 4 1 3 2
-
- 1 3 2 4
- 2 4 1 3
- 3 2 4 1
- 4 1 3 2
-
-
-Solution number 27
-Possible solution set:
- 1 3 2 4 2 4 1 3 4 1 3 2 3 2 4 1
-
- 1 3 2 4
- 2 4 1 3
- 4 1 3 2
- 3 2 4 1
-
-
-Solution number 28
+Solution number 5
 Possible solution set:
  1 3 2 4 2 4 1 3 4 2 3 1 3 1 4 2
 
@@ -278,67 +48,7 @@ Possible solution set:
  3 1 4 2
 
 
-Solution number 29
-Possible solution set:
- 1 3 2 4 2 4 3 1 3 1 4 2 4 2 1 3
-
- 1 3 2 4
- 2 4 3 1
- 3 1 4 2
- 4 2 1 3
-
-
-Solution number 30
-Possible solution set:
- 1 3 2 4 2 4 3 1 4 2 1 3 3 1 4 2
-
- 1 3 2 4
- 2 4 3 1
- 4 2 1 3
- 3 1 4 2
-
-
-Solution number 31
-Possible solution set:
- 1 3 2 4 4 2 1 3 2 4 3 1 3 1 4 2
-
- 1 3 2 4
- 4 2 1 3
- 2 4 3 1
- 3 1 4 2
-
-
-Solution number 32
-Possible solution set:
- 1 3 2 4 4 2 1 3 3 1 4 2 2 4 3 1
-
- 1 3 2 4
- 4 2 1 3
- 3 1 4 2
- 2 4 3 1
-
-
-Solution number 33
-Possible solution set:
- 1 3 2 4 4 2 3 1 2 1 4 3 3 4 1 2
-
- 1 3 2 4
- 4 2 3 1
- 2 1 4 3
- 3 4 1 2
-
-
-Solution number 34
-Possible solution set:
- 1 3 2 4 4 2 3 1 2 4 1 3 3 1 4 2
-
- 1 3 2 4
- 4 2 3 1
- 2 4 1 3
- 3 1 4 2
-
-
-Solution number 35
+Solution number 6
 Possible solution set:
  1 3 2 4 4 2 3 1 3 1 4 2 2 4 1 3
 
@@ -348,37 +58,7 @@ Possible solution set:
  2 4 1 3
 
 
-Solution number 36
-Possible solution set:
- 1 3 2 4 4 2 3 1 3 4 1 2 2 1 4 3
-
- 1 3 2 4
- 4 2 3 1
- 3 4 1 2
- 2 1 4 3
-
-
-Solution number 37
-Possible solution set:
- 1 3 4 2 2 4 1 3 3 1 2 4 4 2 3 1
-
- 1 3 4 2
- 2 4 1 3
- 3 1 2 4
- 4 2 3 1
-
-
-Solution number 38
-Possible solution set:
- 1 3 4 2 2 4 1 3 4 2 3 1 3 1 2 4
-
- 1 3 4 2
- 2 4 1 3
- 4 2 3 1
- 3 1 2 4
-
-
-Solution number 39
+Solution number 7
 Possible solution set:
  1 3 4 2 2 4 3 1 3 1 2 4 4 2 1 3
 
@@ -388,47 +68,7 @@ Possible solution set:
  4 2 1 3
 
 
-Solution number 40
-Possible solution set:
- 1 3 4 2 2 4 3 1 3 2 1 4 4 1 2 3
-
- 1 3 4 2
- 2 4 3 1
- 3 2 1 4
- 4 1 2 3
-
-
-Solution number 41
-Possible solution set:
- 1 3 4 2 2 4 3 1 4 1 2 3 3 2 1 4
-
- 1 3 4 2
- 2 4 3 1
- 4 1 2 3
- 3 2 1 4
-
-
-Solution number 42
-Possible solution set:
- 1 3 4 2 2 4 3 1 4 2 1 3 3 1 2 4
-
- 1 3 4 2
- 2 4 3 1
- 4 2 1 3
- 3 1 2 4
-
-
-Solution number 43
-Possible solution set:
- 1 3 4 2 4 2 1 3 2 1 3 4 3 4 2 1
-
- 1 3 4 2
- 4 2 1 3
- 2 1 3 4
- 3 4 2 1
-
-
-Solution number 44
+Solution number 8
 Possible solution set:
  1 3 4 2 4 2 1 3 2 4 3 1 3 1 2 4
 
@@ -438,57 +78,7 @@ Possible solution set:
  3 1 2 4
 
 
-Solution number 45
-Possible solution set:
- 1 3 4 2 4 2 1 3 3 1 2 4 2 4 3 1
-
- 1 3 4 2
- 4 2 1 3
- 3 1 2 4
- 2 4 3 1
-
-
-Solution number 46
-Possible solution set:
- 1 3 4 2 4 2 1 3 3 4 2 1 2 1 3 4
-
- 1 3 4 2
- 4 2 1 3
- 3 4 2 1
- 2 1 3 4
-
-
-Solution number 47
-Possible solution set:
- 1 3 4 2 4 2 3 1 2 4 1 3 3 1 2 4
-
- 1 3 4 2
- 4 2 3 1
- 2 4 1 3
- 3 1 2 4
-
-
-Solution number 48
-Possible solution set:
- 1 3 4 2 4 2 3 1 3 1 2 4 2 4 1 3
-
- 1 3 4 2
- 4 2 3 1
- 3 1 2 4
- 2 4 1 3
-
-
-Solution number 49
-Possible solution set:
- 1 4 2 3 2 3 1 4 3 1 4 2 4 2 3 1
-
- 1 4 2 3
- 2 3 1 4
- 3 1 4 2
- 4 2 3 1
-
-
-Solution number 50
+Solution number 9
 Possible solution set:
  1 4 2 3 2 3 1 4 3 2 4 1 4 1 3 2
 
@@ -498,87 +88,7 @@ Possible solution set:
  4 1 3 2
 
 
-Solution number 51
-Possible solution set:
- 1 4 2 3 2 3 1 4 4 1 3 2 3 2 4 1
-
- 1 4 2 3
- 2 3 1 4
- 4 1 3 2
- 3 2 4 1
-
-
-Solution number 52
-Possible solution set:
- 1 4 2 3 2 3 1 4 4 2 3 1 3 1 4 2
-
- 1 4 2 3
- 2 3 1 4
- 4 2 3 1
- 3 1 4 2
-
-
-Solution number 53
-Possible solution set:
- 1 4 2 3 2 3 4 1 3 2 1 4 4 1 3 2
-
- 1 4 2 3
- 2 3 4 1
- 3 2 1 4
- 4 1 3 2
-
-
-Solution number 54
-Possible solution set:
- 1 4 2 3 2 3 4 1 4 1 3 2 3 2 1 4
-
- 1 4 2 3
- 2 3 4 1
- 4 1 3 2
- 3 2 1 4
-
-
-Solution number 55
-Possible solution set:
- 1 4 2 3 3 2 1 4 2 3 4 1 4 1 3 2
-
- 1 4 2 3
- 3 2 1 4
- 2 3 4 1
- 4 1 3 2
-
-
-Solution number 56
-Possible solution set:
- 1 4 2 3 3 2 1 4 4 1 3 2 2 3 4 1
-
- 1 4 2 3
- 3 2 1 4
- 4 1 3 2
- 2 3 4 1
-
-
-Solution number 57
-Possible solution set:
- 1 4 2 3 3 2 4 1 2 1 3 4 4 3 1 2
-
- 1 4 2 3
- 3 2 4 1
- 2 1 3 4
- 4 3 1 2
-
-
-Solution number 58
-Possible solution set:
- 1 4 2 3 3 2 4 1 2 3 1 4 4 1 3 2
-
- 1 4 2 3
- 3 2 4 1
- 2 3 1 4
- 4 1 3 2
-
-
-Solution number 59
+Solution number 10
 Possible solution set:
  1 4 2 3 3 2 4 1 4 1 3 2 2 3 1 4
 
@@ -588,57 +98,7 @@ Possible solution set:
  2 3 1 4
 
 
-Solution number 60
-Possible solution set:
- 1 4 2 3 3 2 4 1 4 3 1 2 2 1 3 4
-
- 1 4 2 3
- 3 2 4 1
- 4 3 1 2
- 2 1 3 4
-
-
-Solution number 61
-Possible solution set:
- 1 4 3 2 2 3 1 4 3 2 4 1 4 1 2 3
-
- 1 4 3 2
- 2 3 1 4
- 3 2 4 1
- 4 1 2 3
-
-
-Solution number 62
-Possible solution set:
- 1 4 3 2 2 3 1 4 4 1 2 3 3 2 4 1
-
- 1 4 3 2
- 2 3 1 4
- 4 1 2 3
- 3 2 4 1
-
-
-Solution number 63
-Possible solution set:
- 1 4 3 2 2 3 4 1 3 1 2 4 4 2 1 3
-
- 1 4 3 2
- 2 3 4 1
- 3 1 2 4
- 4 2 1 3
-
-
-Solution number 64
-Possible solution set:
- 1 4 3 2 2 3 4 1 3 2 1 4 4 1 2 3
-
- 1 4 3 2
- 2 3 4 1
- 3 2 1 4
- 4 1 2 3
-
-
-Solution number 65
+Solution number 11
 Possible solution set:
  1 4 3 2 2 3 4 1 4 1 2 3 3 2 1 4
 
@@ -648,27 +108,7 @@ Possible solution set:
  3 2 1 4
 
 
-Solution number 66
-Possible solution set:
- 1 4 3 2 2 3 4 1 4 2 1 3 3 1 2 4
-
- 1 4 3 2
- 2 3 4 1
- 4 2 1 3
- 3 1 2 4
-
-
-Solution number 67
-Possible solution set:
- 1 4 3 2 3 2 1 4 2 1 4 3 4 3 2 1
-
- 1 4 3 2
- 3 2 1 4
- 2 1 4 3
- 4 3 2 1
-
-
-Solution number 68
+Solution number 12
 Possible solution set:
  1 4 3 2 3 2 1 4 2 3 4 1 4 1 2 3
 
@@ -678,97 +118,7 @@ Possible solution set:
  4 1 2 3
 
 
-Solution number 69
-Possible solution set:
- 1 4 3 2 3 2 1 4 4 1 2 3 2 3 4 1
-
- 1 4 3 2
- 3 2 1 4
- 4 1 2 3
- 2 3 4 1
-
-
-Solution number 70
-Possible solution set:
- 1 4 3 2 3 2 1 4 4 3 2 1 2 1 4 3
-
- 1 4 3 2
- 3 2 1 4
- 4 3 2 1
- 2 1 4 3
-
-
-Solution number 71
-Possible solution set:
- 1 4 3 2 3 2 4 1 2 3 1 4 4 1 2 3
-
- 1 4 3 2
- 3 2 4 1
- 2 3 1 4
- 4 1 2 3
-
-
-Solution number 72
-Possible solution set:
- 1 4 3 2 3 2 4 1 4 1 2 3 2 3 1 4
-
- 1 4 3 2
- 3 2 4 1
- 4 1 2 3
- 2 3 1 4
-
-
-Solution number 73
-Possible solution set:
- 2 1 3 4 3 4 1 2 1 2 4 3 4 3 2 1
-
- 2 1 3 4
- 3 4 1 2
- 1 2 4 3
- 4 3 2 1
-
-
-Solution number 74
-Possible solution set:
- 2 1 3 4 3 4 1 2 4 3 2 1 1 2 4 3
-
- 2 1 3 4
- 3 4 1 2
- 4 3 2 1
- 1 2 4 3
-
-
-Solution number 75
-Possible solution set:
- 2 1 3 4 3 4 2 1 1 2 4 3 4 3 1 2
-
- 2 1 3 4
- 3 4 2 1
- 1 2 4 3
- 4 3 1 2
-
-
-Solution number 76
-Possible solution set:
- 2 1 3 4 3 4 2 1 1 3 4 2 4 2 1 3
-
- 2 1 3 4
- 3 4 2 1
- 1 3 4 2
- 4 2 1 3
-
-
-Solution number 77
-Possible solution set:
- 2 1 3 4 3 4 2 1 4 2 1 3 1 3 4 2
-
- 2 1 3 4
- 3 4 2 1
- 4 2 1 3
- 1 3 4 2
-
-
-Solution number 78
+Solution number 13
 Possible solution set:
  2 1 3 4 3 4 2 1 4 3 1 2 1 2 4 3
 
@@ -778,7 +128,7 @@ Possible solution set:
  1 2 4 3
 
 
-Solution number 79
+Solution number 14
 Possible solution set:
  2 1 3 4 4 3 1 2 1 2 4 3 3 4 2 1
 
@@ -788,57 +138,7 @@ Possible solution set:
  3 4 2 1
 
 
-Solution number 80
-Possible solution set:
- 2 1 3 4 4 3 1 2 1 4 2 3 3 2 4 1
-
- 2 1 3 4
- 4 3 1 2
- 1 4 2 3
- 3 2 4 1
-
-
-Solution number 81
-Possible solution set:
- 2 1 3 4 4 3 1 2 3 2 4 1 1 4 2 3
-
- 2 1 3 4
- 4 3 1 2
- 3 2 4 1
- 1 4 2 3
-
-
-Solution number 82
-Possible solution set:
- 2 1 3 4 4 3 1 2 3 4 2 1 1 2 4 3
-
- 2 1 3 4
- 4 3 1 2
- 3 4 2 1
- 1 2 4 3
-
-
-Solution number 83
-Possible solution set:
- 2 1 3 4 4 3 2 1 1 2 4 3 3 4 1 2
-
- 2 1 3 4
- 4 3 2 1
- 1 2 4 3
- 3 4 1 2
-
-
-Solution number 84
-Possible solution set:
- 2 1 3 4 4 3 2 1 3 4 1 2 1 2 4 3
-
- 2 1 3 4
- 4 3 2 1
- 3 4 1 2
- 1 2 4 3
-
-
-Solution number 85
+Solution number 15
 Possible solution set:
  2 1 4 3 3 4 1 2 1 2 3 4 4 3 2 1
 
@@ -848,107 +148,7 @@ Possible solution set:
  4 3 2 1
 
 
-Solution number 86
-Possible solution set:
- 2 1 4 3 3 4 1 2 1 3 2 4 4 2 3 1
-
- 2 1 4 3
- 3 4 1 2
- 1 3 2 4
- 4 2 3 1
-
-
-Solution number 87
-Possible solution set:
- 2 1 4 3 3 4 1 2 4 2 3 1 1 3 2 4
-
- 2 1 4 3
- 3 4 1 2
- 4 2 3 1
- 1 3 2 4
-
-
-Solution number 88
-Possible solution set:
- 2 1 4 3 3 4 1 2 4 3 2 1 1 2 3 4
-
- 2 1 4 3
- 3 4 1 2
- 4 3 2 1
- 1 2 3 4
-
-
-Solution number 89
-Possible solution set:
- 2 1 4 3 3 4 2 1 1 2 3 4 4 3 1 2
-
- 2 1 4 3
- 3 4 2 1
- 1 2 3 4
- 4 3 1 2
-
-
-Solution number 90
-Possible solution set:
- 2 1 4 3 3 4 2 1 4 3 1 2 1 2 3 4
-
- 2 1 4 3
- 3 4 2 1
- 4 3 1 2
- 1 2 3 4
-
-
-Solution number 91
-Possible solution set:
- 2 1 4 3 4 3 1 2 1 2 3 4 3 4 2 1
-
- 2 1 4 3
- 4 3 1 2
- 1 2 3 4
- 3 4 2 1
-
-
-Solution number 92
-Possible solution set:
- 2 1 4 3 4 3 1 2 3 4 2 1 1 2 3 4
-
- 2 1 4 3
- 4 3 1 2
- 3 4 2 1
- 1 2 3 4
-
-
-Solution number 93
-Possible solution set:
- 2 1 4 3 4 3 2 1 1 2 3 4 3 4 1 2
-
- 2 1 4 3
- 4 3 2 1
- 1 2 3 4
- 3 4 1 2
-
-
-Solution number 94
-Possible solution set:
- 2 1 4 3 4 3 2 1 1 4 3 2 3 2 1 4
-
- 2 1 4 3
- 4 3 2 1
- 1 4 3 2
- 3 2 1 4
-
-
-Solution number 95
-Possible solution set:
- 2 1 4 3 4 3 2 1 3 2 1 4 1 4 3 2
-
- 2 1 4 3
- 4 3 2 1
- 3 2 1 4
- 1 4 3 2
-
-
-Solution number 96
+Solution number 16
 Possible solution set:
  2 1 4 3 4 3 2 1 3 4 1 2 1 2 3 4
 
@@ -958,27 +158,7 @@ Possible solution set:
  1 2 3 4
 
 
-Solution number 97
-Possible solution set:
- 2 3 1 4 1 4 2 3 3 1 4 2 4 2 3 1
-
- 2 3 1 4
- 1 4 2 3
- 3 1 4 2
- 4 2 3 1
-
-
-Solution number 98
-Possible solution set:
- 2 3 1 4 1 4 2 3 3 2 4 1 4 1 3 2
-
- 2 3 1 4
- 1 4 2 3
- 3 2 4 1
- 4 1 3 2
-
-
-Solution number 99
+Solution number 17
 Possible solution set:
  2 3 1 4 1 4 2 3 4 1 3 2 3 2 4 1
 
@@ -988,77 +168,7 @@ Possible solution set:
  3 2 4 1
 
 
-Solution number 100
-Possible solution set:
- 2 3 1 4 1 4 2 3 4 2 3 1 3 1 4 2
-
- 2 3 1 4
- 1 4 2 3
- 4 2 3 1
- 3 1 4 2
-
-
-Solution number 101
-Possible solution set:
- 2 3 1 4 1 4 3 2 3 2 4 1 4 1 2 3
-
- 2 3 1 4
- 1 4 3 2
- 3 2 4 1
- 4 1 2 3
-
-
-Solution number 102
-Possible solution set:
- 2 3 1 4 1 4 3 2 4 1 2 3 3 2 4 1
-
- 2 3 1 4
- 1 4 3 2
- 4 1 2 3
- 3 2 4 1
-
-
-Solution number 103
-Possible solution set:
- 2 3 1 4 4 1 2 3 1 4 3 2 3 2 4 1
-
- 2 3 1 4
- 4 1 2 3
- 1 4 3 2
- 3 2 4 1
-
-
-Solution number 104
-Possible solution set:
- 2 3 1 4 4 1 2 3 3 2 4 1 1 4 3 2
-
- 2 3 1 4
- 4 1 2 3
- 3 2 4 1
- 1 4 3 2
-
-
-Solution number 105
-Possible solution set:
- 2 3 1 4 4 1 3 2 1 2 4 3 3 4 2 1
-
- 2 3 1 4
- 4 1 3 2
- 1 2 4 3
- 3 4 2 1
-
-
-Solution number 106
-Possible solution set:
- 2 3 1 4 4 1 3 2 1 4 2 3 3 2 4 1
-
- 2 3 1 4
- 4 1 3 2
- 1 4 2 3
- 3 2 4 1
-
-
-Solution number 107
+Solution number 18
 Possible solution set:
  2 3 1 4 4 1 3 2 3 2 4 1 1 4 2 3
 
@@ -1068,47 +178,7 @@ Possible solution set:
  1 4 2 3
 
 
-Solution number 108
-Possible solution set:
- 2 3 1 4 4 1 3 2 3 4 2 1 1 2 4 3
-
- 2 3 1 4
- 4 1 3 2
- 3 4 2 1
- 1 2 4 3
-
-
-Solution number 109
-Possible solution set:
- 2 3 4 1 1 4 2 3 3 2 1 4 4 1 3 2
-
- 2 3 4 1
- 1 4 2 3
- 3 2 1 4
- 4 1 3 2
-
-
-Solution number 110
-Possible solution set:
- 2 3 4 1 1 4 2 3 4 1 3 2 3 2 1 4
-
- 2 3 4 1
- 1 4 2 3
- 4 1 3 2
- 3 2 1 4
-
-
-Solution number 111
-Possible solution set:
- 2 3 4 1 1 4 3 2 3 1 2 4 4 2 1 3
-
- 2 3 4 1
- 1 4 3 2
- 3 1 2 4
- 4 2 1 3
-
-
-Solution number 112
+Solution number 19
 Possible solution set:
  2 3 4 1 1 4 3 2 3 2 1 4 4 1 2 3
 
@@ -1118,37 +188,7 @@ Possible solution set:
  4 1 2 3
 
 
-Solution number 113
-Possible solution set:
- 2 3 4 1 1 4 3 2 4 1 2 3 3 2 1 4
-
- 2 3 4 1
- 1 4 3 2
- 4 1 2 3
- 3 2 1 4
-
-
-Solution number 114
-Possible solution set:
- 2 3 4 1 1 4 3 2 4 2 1 3 3 1 2 4
-
- 2 3 4 1
- 1 4 3 2
- 4 2 1 3
- 3 1 2 4
-
-
-Solution number 115
-Possible solution set:
- 2 3 4 1 4 1 2 3 1 2 3 4 3 4 1 2
-
- 2 3 4 1
- 4 1 2 3
- 1 2 3 4
- 3 4 1 2
-
-
-Solution number 116
+Solution number 20
 Possible solution set:
  2 3 4 1 4 1 2 3 1 4 3 2 3 2 1 4
 
@@ -1158,47 +198,7 @@ Possible solution set:
  3 2 1 4
 
 
-Solution number 117
-Possible solution set:
- 2 3 4 1 4 1 2 3 3 2 1 4 1 4 3 2
-
- 2 3 4 1
- 4 1 2 3
- 3 2 1 4
- 1 4 3 2
-
-
-Solution number 118
-Possible solution set:
- 2 3 4 1 4 1 2 3 3 4 1 2 1 2 3 4
-
- 2 3 4 1
- 4 1 2 3
- 3 4 1 2
- 1 2 3 4
-
-
-Solution number 119
-Possible solution set:
- 2 3 4 1 4 1 3 2 1 4 2 3 3 2 1 4
-
- 2 3 4 1
- 4 1 3 2
- 1 4 2 3
- 3 2 1 4
-
-
-Solution number 120
-Possible solution set:
- 2 3 4 1 4 1 3 2 3 2 1 4 1 4 2 3
-
- 2 3 4 1
- 4 1 3 2
- 3 2 1 4
- 1 4 2 3
-
-
-Solution number 121
+Solution number 21
 Possible solution set:
  2 4 1 3 1 3 2 4 3 1 4 2 4 2 3 1
 
@@ -1208,97 +208,7 @@ Possible solution set:
  4 2 3 1
 
 
-Solution number 122
-Possible solution set:
- 2 4 1 3 1 3 2 4 3 2 4 1 4 1 3 2
-
- 2 4 1 3
- 1 3 2 4
- 3 2 4 1
- 4 1 3 2
-
-
-Solution number 123
-Possible solution set:
- 2 4 1 3 1 3 2 4 4 1 3 2 3 2 4 1
-
- 2 4 1 3
- 1 3 2 4
- 4 1 3 2
- 3 2 4 1
-
-
-Solution number 124
-Possible solution set:
- 2 4 1 3 1 3 2 4 4 2 3 1 3 1 4 2
-
- 2 4 1 3
- 1 3 2 4
- 4 2 3 1
- 3 1 4 2
-
-
-Solution number 125
-Possible solution set:
- 2 4 1 3 1 3 4 2 3 1 2 4 4 2 3 1
-
- 2 4 1 3
- 1 3 4 2
- 3 1 2 4
- 4 2 3 1
-
-
-Solution number 126
-Possible solution set:
- 2 4 1 3 1 3 4 2 4 2 3 1 3 1 2 4
-
- 2 4 1 3
- 1 3 4 2
- 4 2 3 1
- 3 1 2 4
-
-
-Solution number 127
-Possible solution set:
- 2 4 1 3 3 1 2 4 1 3 4 2 4 2 3 1
-
- 2 4 1 3
- 3 1 2 4
- 1 3 4 2
- 4 2 3 1
-
-
-Solution number 128
-Possible solution set:
- 2 4 1 3 3 1 2 4 4 2 3 1 1 3 4 2
-
- 2 4 1 3
- 3 1 2 4
- 4 2 3 1
- 1 3 4 2
-
-
-Solution number 129
-Possible solution set:
- 2 4 1 3 3 1 4 2 1 2 3 4 4 3 2 1
-
- 2 4 1 3
- 3 1 4 2
- 1 2 3 4
- 4 3 2 1
-
-
-Solution number 130
-Possible solution set:
- 2 4 1 3 3 1 4 2 1 3 2 4 4 2 3 1
-
- 2 4 1 3
- 3 1 4 2
- 1 3 2 4
- 4 2 3 1
-
-
-Solution number 131
+Solution number 22
 Possible solution set:
  2 4 1 3 3 1 4 2 4 2 3 1 1 3 2 4
 
@@ -1308,67 +218,7 @@ Possible solution set:
  1 3 2 4
 
 
-Solution number 132
-Possible solution set:
- 2 4 1 3 3 1 4 2 4 3 2 1 1 2 3 4
-
- 2 4 1 3
- 3 1 4 2
- 4 3 2 1
- 1 2 3 4
-
-
-Solution number 133
-Possible solution set:
- 2 4 3 1 1 3 2 4 3 1 4 2 4 2 1 3
-
- 2 4 3 1
- 1 3 2 4
- 3 1 4 2
- 4 2 1 3
-
-
-Solution number 134
-Possible solution set:
- 2 4 3 1 1 3 2 4 4 2 1 3 3 1 4 2
-
- 2 4 3 1
- 1 3 2 4
- 4 2 1 3
- 3 1 4 2
-
-
-Solution number 135
-Possible solution set:
- 2 4 3 1 1 3 4 2 3 1 2 4 4 2 1 3
-
- 2 4 3 1
- 1 3 4 2
- 3 1 2 4
- 4 2 1 3
-
-
-Solution number 136
-Possible solution set:
- 2 4 3 1 1 3 4 2 3 2 1 4 4 1 2 3
-
- 2 4 3 1
- 1 3 4 2
- 3 2 1 4
- 4 1 2 3
-
-
-Solution number 137
-Possible solution set:
- 2 4 3 1 1 3 4 2 4 1 2 3 3 2 1 4
-
- 2 4 3 1
- 1 3 4 2
- 4 1 2 3
- 3 2 1 4
-
-
-Solution number 138
+Solution number 23
 Possible solution set:
  2 4 3 1 1 3 4 2 4 2 1 3 3 1 2 4
 
@@ -1378,17 +228,7 @@ Possible solution set:
  3 1 2 4
 
 
-Solution number 139
-Possible solution set:
- 2 4 3 1 3 1 2 4 1 2 4 3 4 3 1 2
-
- 2 4 3 1
- 3 1 2 4
- 1 2 4 3
- 4 3 1 2
-
-
-Solution number 140
+Solution number 24
 Possible solution set:
  2 4 3 1 3 1 2 4 1 3 4 2 4 2 1 3
 
@@ -1398,87 +238,7 @@ Possible solution set:
  4 2 1 3
 
 
-Solution number 141
-Possible solution set:
- 2 4 3 1 3 1 2 4 4 2 1 3 1 3 4 2
-
- 2 4 3 1
- 3 1 2 4
- 4 2 1 3
- 1 3 4 2
-
-
-Solution number 142
-Possible solution set:
- 2 4 3 1 3 1 2 4 4 3 1 2 1 2 4 3
-
- 2 4 3 1
- 3 1 2 4
- 4 3 1 2
- 1 2 4 3
-
-
-Solution number 143
-Possible solution set:
- 2 4 3 1 3 1 4 2 1 3 2 4 4 2 1 3
-
- 2 4 3 1
- 3 1 4 2
- 1 3 2 4
- 4 2 1 3
-
-
-Solution number 144
-Possible solution set:
- 2 4 3 1 3 1 4 2 4 2 1 3 1 3 2 4
-
- 2 4 3 1
- 3 1 4 2
- 4 2 1 3
- 1 3 2 4
-
-
-Solution number 145
-Possible solution set:
- 3 1 2 4 2 4 1 3 1 3 4 2 4 2 3 1
-
- 3 1 2 4
- 2 4 1 3
- 1 3 4 2
- 4 2 3 1
-
-
-Solution number 146
-Possible solution set:
- 3 1 2 4 2 4 1 3 4 2 3 1 1 3 4 2
-
- 3 1 2 4
- 2 4 1 3
- 4 2 3 1
- 1 3 4 2
-
-
-Solution number 147
-Possible solution set:
- 3 1 2 4 2 4 3 1 1 2 4 3 4 3 1 2
-
- 3 1 2 4
- 2 4 3 1
- 1 2 4 3
- 4 3 1 2
-
-
-Solution number 148
-Possible solution set:
- 3 1 2 4 2 4 3 1 1 3 4 2 4 2 1 3
-
- 3 1 2 4
- 2 4 3 1
- 1 3 4 2
- 4 2 1 3
-
-
-Solution number 149
+Solution number 25
 Possible solution set:
  3 1 2 4 2 4 3 1 4 2 1 3 1 3 4 2
 
@@ -1488,17 +248,7 @@ Possible solution set:
  1 3 4 2
 
 
-Solution number 150
-Possible solution set:
- 3 1 2 4 2 4 3 1 4 3 1 2 1 2 4 3
-
- 3 1 2 4
- 2 4 3 1
- 4 3 1 2
- 1 2 4 3
-
-
-Solution number 151
+Solution number 26
 Possible solution set:
  3 1 2 4 4 2 1 3 1 3 4 2 2 4 3 1
 
@@ -1508,67 +258,7 @@ Possible solution set:
  2 4 3 1
 
 
-Solution number 152
-Possible solution set:
- 3 1 2 4 4 2 1 3 1 4 3 2 2 3 4 1
-
- 3 1 2 4
- 4 2 1 3
- 1 4 3 2
- 2 3 4 1
-
-
-Solution number 153
-Possible solution set:
- 3 1 2 4 4 2 1 3 2 3 4 1 1 4 3 2
-
- 3 1 2 4
- 4 2 1 3
- 2 3 4 1
- 1 4 3 2
-
-
-Solution number 154
-Possible solution set:
- 3 1 2 4 4 2 1 3 2 4 3 1 1 3 4 2
-
- 3 1 2 4
- 4 2 1 3
- 2 4 3 1
- 1 3 4 2
-
-
-Solution number 155
-Possible solution set:
- 3 1 2 4 4 2 3 1 1 3 4 2 2 4 1 3
-
- 3 1 2 4
- 4 2 3 1
- 1 3 4 2
- 2 4 1 3
-
-
-Solution number 156
-Possible solution set:
- 3 1 2 4 4 2 3 1 2 4 1 3 1 3 4 2
-
- 3 1 2 4
- 4 2 3 1
- 2 4 1 3
- 1 3 4 2
-
-
-Solution number 157
-Possible solution set:
- 3 1 4 2 2 4 1 3 1 2 3 4 4 3 2 1
-
- 3 1 4 2
- 2 4 1 3
- 1 2 3 4
- 4 3 2 1
-
-
-Solution number 158
+Solution number 27
 Possible solution set:
  3 1 4 2 2 4 1 3 1 3 2 4 4 2 3 1
 
@@ -1578,97 +268,7 @@ Possible solution set:
  4 2 3 1
 
 
-Solution number 159
-Possible solution set:
- 3 1 4 2 2 4 1 3 4 2 3 1 1 3 2 4
-
- 3 1 4 2
- 2 4 1 3
- 4 2 3 1
- 1 3 2 4
-
-
-Solution number 160
-Possible solution set:
- 3 1 4 2 2 4 1 3 4 3 2 1 1 2 3 4
-
- 3 1 4 2
- 2 4 1 3
- 4 3 2 1
- 1 2 3 4
-
-
-Solution number 161
-Possible solution set:
- 3 1 4 2 2 4 3 1 1 3 2 4 4 2 1 3
-
- 3 1 4 2
- 2 4 3 1
- 1 3 2 4
- 4 2 1 3
-
-
-Solution number 162
-Possible solution set:
- 3 1 4 2 2 4 3 1 4 2 1 3 1 3 2 4
-
- 3 1 4 2
- 2 4 3 1
- 4 2 1 3
- 1 3 2 4
-
-
-Solution number 163
-Possible solution set:
- 3 1 4 2 4 2 1 3 1 3 2 4 2 4 3 1
-
- 3 1 4 2
- 4 2 1 3
- 1 3 2 4
- 2 4 3 1
-
-
-Solution number 164
-Possible solution set:
- 3 1 4 2 4 2 1 3 2 4 3 1 1 3 2 4
-
- 3 1 4 2
- 4 2 1 3
- 2 4 3 1
- 1 3 2 4
-
-
-Solution number 165
-Possible solution set:
- 3 1 4 2 4 2 3 1 1 3 2 4 2 4 1 3
-
- 3 1 4 2
- 4 2 3 1
- 1 3 2 4
- 2 4 1 3
-
-
-Solution number 166
-Possible solution set:
- 3 1 4 2 4 2 3 1 1 4 2 3 2 3 1 4
-
- 3 1 4 2
- 4 2 3 1
- 1 4 2 3
- 2 3 1 4
-
-
-Solution number 167
-Possible solution set:
- 3 1 4 2 4 2 3 1 2 3 1 4 1 4 2 3
-
- 3 1 4 2
- 4 2 3 1
- 2 3 1 4
- 1 4 2 3
-
-
-Solution number 168
+Solution number 28
 Possible solution set:
  3 1 4 2 4 2 3 1 2 4 1 3 1 3 2 4
 
@@ -1678,47 +278,7 @@ Possible solution set:
  1 3 2 4
 
 
-Solution number 169
-Possible solution set:
- 3 2 1 4 1 4 2 3 2 3 4 1 4 1 3 2
-
- 3 2 1 4
- 1 4 2 3
- 2 3 4 1
- 4 1 3 2
-
-
-Solution number 170
-Possible solution set:
- 3 2 1 4 1 4 2 3 4 1 3 2 2 3 4 1
-
- 3 2 1 4
- 1 4 2 3
- 4 1 3 2
- 2 3 4 1
-
-
-Solution number 171
-Possible solution set:
- 3 2 1 4 1 4 3 2 2 1 4 3 4 3 2 1
-
- 3 2 1 4
- 1 4 3 2
- 2 1 4 3
- 4 3 2 1
-
-
-Solution number 172
-Possible solution set:
- 3 2 1 4 1 4 3 2 2 3 4 1 4 1 2 3
-
- 3 2 1 4
- 1 4 3 2
- 2 3 4 1
- 4 1 2 3
-
-
-Solution number 173
+Solution number 29
 Possible solution set:
  3 2 1 4 1 4 3 2 4 1 2 3 2 3 4 1
 
@@ -1728,37 +288,7 @@ Possible solution set:
  2 3 4 1
 
 
-Solution number 174
-Possible solution set:
- 3 2 1 4 1 4 3 2 4 3 2 1 2 1 4 3
-
- 3 2 1 4
- 1 4 3 2
- 4 3 2 1
- 2 1 4 3
-
-
-Solution number 175
-Possible solution set:
- 3 2 1 4 4 1 2 3 1 3 4 2 2 4 3 1
-
- 3 2 1 4
- 4 1 2 3
- 1 3 4 2
- 2 4 3 1
-
-
-Solution number 176
-Possible solution set:
- 3 2 1 4 4 1 2 3 1 4 3 2 2 3 4 1
-
- 3 2 1 4
- 4 1 2 3
- 1 4 3 2
- 2 3 4 1
-
-
-Solution number 177
+Solution number 30
 Possible solution set:
  3 2 1 4 4 1 2 3 2 3 4 1 1 4 3 2
 
@@ -1768,47 +298,7 @@ Possible solution set:
  1 4 3 2
 
 
-Solution number 178
-Possible solution set:
- 3 2 1 4 4 1 2 3 2 4 3 1 1 3 4 2
-
- 3 2 1 4
- 4 1 2 3
- 2 4 3 1
- 1 3 4 2
-
-
-Solution number 179
-Possible solution set:
- 3 2 1 4 4 1 3 2 1 4 2 3 2 3 4 1
-
- 3 2 1 4
- 4 1 3 2
- 1 4 2 3
- 2 3 4 1
-
-
-Solution number 180
-Possible solution set:
- 3 2 1 4 4 1 3 2 2 3 4 1 1 4 2 3
-
- 3 2 1 4
- 4 1 3 2
- 2 3 4 1
- 1 4 2 3
-
-
-Solution number 181
-Possible solution set:
- 3 2 4 1 1 4 2 3 2 1 3 4 4 3 1 2
-
- 3 2 4 1
- 1 4 2 3
- 2 1 3 4
- 4 3 1 2
-
-
-Solution number 182
+Solution number 31
 Possible solution set:
  3 2 4 1 1 4 2 3 2 3 1 4 4 1 3 2
 
@@ -1818,77 +308,7 @@ Possible solution set:
  4 1 3 2
 
 
-Solution number 183
-Possible solution set:
- 3 2 4 1 1 4 2 3 4 1 3 2 2 3 1 4
-
- 3 2 4 1
- 1 4 2 3
- 4 1 3 2
- 2 3 1 4
-
-
-Solution number 184
-Possible solution set:
- 3 2 4 1 1 4 2 3 4 3 1 2 2 1 3 4
-
- 3 2 4 1
- 1 4 2 3
- 4 3 1 2
- 2 1 3 4
-
-
-Solution number 185
-Possible solution set:
- 3 2 4 1 1 4 3 2 2 3 1 4 4 1 2 3
-
- 3 2 4 1
- 1 4 3 2
- 2 3 1 4
- 4 1 2 3
-
-
-Solution number 186
-Possible solution set:
- 3 2 4 1 1 4 3 2 4 1 2 3 2 3 1 4
-
- 3 2 4 1
- 1 4 3 2
- 4 1 2 3
- 2 3 1 4
-
-
-Solution number 187
-Possible solution set:
- 3 2 4 1 4 1 2 3 1 4 3 2 2 3 1 4
-
- 3 2 4 1
- 4 1 2 3
- 1 4 3 2
- 2 3 1 4
-
-
-Solution number 188
-Possible solution set:
- 3 2 4 1 4 1 2 3 2 3 1 4 1 4 3 2
-
- 3 2 4 1
- 4 1 2 3
- 2 3 1 4
- 1 4 3 2
-
-
-Solution number 189
-Possible solution set:
- 3 2 4 1 4 1 3 2 1 3 2 4 2 4 1 3
-
- 3 2 4 1
- 4 1 3 2
- 1 3 2 4
- 2 4 1 3
-
-
-Solution number 190
+Solution number 32
 Possible solution set:
  3 2 4 1 4 1 3 2 1 4 2 3 2 3 1 4
 
@@ -1898,27 +318,7 @@ Possible solution set:
  2 3 1 4
 
 
-Solution number 191
-Possible solution set:
- 3 2 4 1 4 1 3 2 2 3 1 4 1 4 2 3
-
- 3 2 4 1
- 4 1 3 2
- 2 3 1 4
- 1 4 2 3
-
-
-Solution number 192
-Possible solution set:
- 3 2 4 1 4 1 3 2 2 4 1 3 1 3 2 4
-
- 3 2 4 1
- 4 1 3 2
- 2 4 1 3
- 1 3 2 4
-
-
-Solution number 193
+Solution number 33
 Possible solution set:
  3 4 1 2 1 2 3 4 2 1 4 3 4 3 2 1
 
@@ -1928,107 +328,7 @@ Possible solution set:
  4 3 2 1
 
 
-Solution number 194
-Possible solution set:
- 3 4 1 2 1 2 3 4 2 3 4 1 4 1 2 3
-
- 3 4 1 2
- 1 2 3 4
- 2 3 4 1
- 4 1 2 3
-
-
-Solution number 195
-Possible solution set:
- 3 4 1 2 1 2 3 4 4 1 2 3 2 3 4 1
-
- 3 4 1 2
- 1 2 3 4
- 4 1 2 3
- 2 3 4 1
-
-
-Solution number 196
-Possible solution set:
- 3 4 1 2 1 2 3 4 4 3 2 1 2 1 4 3
-
- 3 4 1 2
- 1 2 3 4
- 4 3 2 1
- 2 1 4 3
-
-
-Solution number 197
-Possible solution set:
- 3 4 1 2 1 2 4 3 2 1 3 4 4 3 2 1
-
- 3 4 1 2
- 1 2 4 3
- 2 1 3 4
- 4 3 2 1
-
-
-Solution number 198
-Possible solution set:
- 3 4 1 2 1 2 4 3 4 3 2 1 2 1 3 4
-
- 3 4 1 2
- 1 2 4 3
- 4 3 2 1
- 2 1 3 4
-
-
-Solution number 199
-Possible solution set:
- 3 4 1 2 2 1 3 4 1 2 4 3 4 3 2 1
-
- 3 4 1 2
- 2 1 3 4
- 1 2 4 3
- 4 3 2 1
-
-
-Solution number 200
-Possible solution set:
- 3 4 1 2 2 1 3 4 4 3 2 1 1 2 4 3
-
- 3 4 1 2
- 2 1 3 4
- 4 3 2 1
- 1 2 4 3
-
-
-Solution number 201
-Possible solution set:
- 3 4 1 2 2 1 4 3 1 2 3 4 4 3 2 1
-
- 3 4 1 2
- 2 1 4 3
- 1 2 3 4
- 4 3 2 1
-
-
-Solution number 202
-Possible solution set:
- 3 4 1 2 2 1 4 3 1 3 2 4 4 2 3 1
-
- 3 4 1 2
- 2 1 4 3
- 1 3 2 4
- 4 2 3 1
-
-
-Solution number 203
-Possible solution set:
- 3 4 1 2 2 1 4 3 4 2 3 1 1 3 2 4
-
- 3 4 1 2
- 2 1 4 3
- 4 2 3 1
- 1 3 2 4
-
-
-Solution number 204
+Solution number 34
 Possible solution set:
  3 4 1 2 2 1 4 3 4 3 2 1 1 2 3 4
 
@@ -2038,57 +338,7 @@ Possible solution set:
  1 2 3 4
 
 
-Solution number 205
-Possible solution set:
- 3 4 2 1 1 2 3 4 2 1 4 3 4 3 1 2
-
- 3 4 2 1
- 1 2 3 4
- 2 1 4 3
- 4 3 1 2
-
-
-Solution number 206
-Possible solution set:
- 3 4 2 1 1 2 3 4 4 3 1 2 2 1 4 3
-
- 3 4 2 1
- 1 2 3 4
- 4 3 1 2
- 2 1 4 3
-
-
-Solution number 207
-Possible solution set:
- 3 4 2 1 1 2 4 3 2 1 3 4 4 3 1 2
-
- 3 4 2 1
- 1 2 4 3
- 2 1 3 4
- 4 3 1 2
-
-
-Solution number 208
-Possible solution set:
- 3 4 2 1 1 2 4 3 2 3 1 4 4 1 3 2
-
- 3 4 2 1
- 1 2 4 3
- 2 3 1 4
- 4 1 3 2
-
-
-Solution number 209
-Possible solution set:
- 3 4 2 1 1 2 4 3 4 1 3 2 2 3 1 4
-
- 3 4 2 1
- 1 2 4 3
- 4 1 3 2
- 2 3 1 4
-
-
-Solution number 210
+Solution number 35
 Possible solution set:
  3 4 2 1 1 2 4 3 4 3 1 2 2 1 3 4
 
@@ -2098,7 +348,7 @@ Possible solution set:
  2 1 3 4
 
 
-Solution number 211
+Solution number 36
 Possible solution set:
  3 4 2 1 2 1 3 4 1 2 4 3 4 3 1 2
 
@@ -2108,97 +358,7 @@ Possible solution set:
  4 3 1 2
 
 
-Solution number 212
-Possible solution set:
- 3 4 2 1 2 1 3 4 1 3 4 2 4 2 1 3
-
- 3 4 2 1
- 2 1 3 4
- 1 3 4 2
- 4 2 1 3
-
-
-Solution number 213
-Possible solution set:
- 3 4 2 1 2 1 3 4 4 2 1 3 1 3 4 2
-
- 3 4 2 1
- 2 1 3 4
- 4 2 1 3
- 1 3 4 2
-
-
-Solution number 214
-Possible solution set:
- 3 4 2 1 2 1 3 4 4 3 1 2 1 2 4 3
-
- 3 4 2 1
- 2 1 3 4
- 4 3 1 2
- 1 2 4 3
-
-
-Solution number 215
-Possible solution set:
- 3 4 2 1 2 1 4 3 1 2 3 4 4 3 1 2
-
- 3 4 2 1
- 2 1 4 3
- 1 2 3 4
- 4 3 1 2
-
-
-Solution number 216
-Possible solution set:
- 3 4 2 1 2 1 4 3 4 3 1 2 1 2 3 4
-
- 3 4 2 1
- 2 1 4 3
- 4 3 1 2
- 1 2 3 4
-
-
-Solution number 217
-Possible solution set:
- 4 1 2 3 2 3 1 4 1 4 3 2 3 2 4 1
-
- 4 1 2 3
- 2 3 1 4
- 1 4 3 2
- 3 2 4 1
-
-
-Solution number 218
-Possible solution set:
- 4 1 2 3 2 3 1 4 3 2 4 1 1 4 3 2
-
- 4 1 2 3
- 2 3 1 4
- 3 2 4 1
- 1 4 3 2
-
-
-Solution number 219
-Possible solution set:
- 4 1 2 3 2 3 4 1 1 2 3 4 3 4 1 2
-
- 4 1 2 3
- 2 3 4 1
- 1 2 3 4
- 3 4 1 2
-
-
-Solution number 220
-Possible solution set:
- 4 1 2 3 2 3 4 1 1 4 3 2 3 2 1 4
-
- 4 1 2 3
- 2 3 4 1
- 1 4 3 2
- 3 2 1 4
-
-
-Solution number 221
+Solution number 37
 Possible solution set:
  4 1 2 3 2 3 4 1 3 2 1 4 1 4 3 2
 
@@ -2208,27 +368,7 @@ Possible solution set:
  1 4 3 2
 
 
-Solution number 222
-Possible solution set:
- 4 1 2 3 2 3 4 1 3 4 1 2 1 2 3 4
-
- 4 1 2 3
- 2 3 4 1
- 3 4 1 2
- 1 2 3 4
-
-
-Solution number 223
-Possible solution set:
- 4 1 2 3 3 2 1 4 1 3 4 2 2 4 3 1
-
- 4 1 2 3
- 3 2 1 4
- 1 3 4 2
- 2 4 3 1
-
-
-Solution number 224
+Solution number 38
 Possible solution set:
  4 1 2 3 3 2 1 4 1 4 3 2 2 3 4 1
 
@@ -2238,57 +378,7 @@ Possible solution set:
  2 3 4 1
 
 
-Solution number 225
-Possible solution set:
- 4 1 2 3 3 2 1 4 2 3 4 1 1 4 3 2
-
- 4 1 2 3
- 3 2 1 4
- 2 3 4 1
- 1 4 3 2
-
-
-Solution number 226
-Possible solution set:
- 4 1 2 3 3 2 1 4 2 4 3 1 1 3 4 2
-
- 4 1 2 3
- 3 2 1 4
- 2 4 3 1
- 1 3 4 2
-
-
-Solution number 227
-Possible solution set:
- 4 1 2 3 3 2 4 1 1 4 3 2 2 3 1 4
-
- 4 1 2 3
- 3 2 4 1
- 1 4 3 2
- 2 3 1 4
-
-
-Solution number 228
-Possible solution set:
- 4 1 2 3 3 2 4 1 2 3 1 4 1 4 3 2
-
- 4 1 2 3
- 3 2 4 1
- 2 3 1 4
- 1 4 3 2
-
-
-Solution number 229
-Possible solution set:
- 4 1 3 2 2 3 1 4 1 2 4 3 3 4 2 1
-
- 4 1 3 2
- 2 3 1 4
- 1 2 4 3
- 3 4 2 1
-
-
-Solution number 230
+Solution number 39
 Possible solution set:
  4 1 3 2 2 3 1 4 1 4 2 3 3 2 4 1
 
@@ -2298,87 +388,7 @@ Possible solution set:
  3 2 4 1
 
 
-Solution number 231
-Possible solution set:
- 4 1 3 2 2 3 1 4 3 2 4 1 1 4 2 3
-
- 4 1 3 2
- 2 3 1 4
- 3 2 4 1
- 1 4 2 3
-
-
-Solution number 232
-Possible solution set:
- 4 1 3 2 2 3 1 4 3 4 2 1 1 2 4 3
-
- 4 1 3 2
- 2 3 1 4
- 3 4 2 1
- 1 2 4 3
-
-
-Solution number 233
-Possible solution set:
- 4 1 3 2 2 3 4 1 1 4 2 3 3 2 1 4
-
- 4 1 3 2
- 2 3 4 1
- 1 4 2 3
- 3 2 1 4
-
-
-Solution number 234
-Possible solution set:
- 4 1 3 2 2 3 4 1 3 2 1 4 1 4 2 3
-
- 4 1 3 2
- 2 3 4 1
- 3 2 1 4
- 1 4 2 3
-
-
-Solution number 235
-Possible solution set:
- 4 1 3 2 3 2 1 4 1 4 2 3 2 3 4 1
-
- 4 1 3 2
- 3 2 1 4
- 1 4 2 3
- 2 3 4 1
-
-
-Solution number 236
-Possible solution set:
- 4 1 3 2 3 2 1 4 2 3 4 1 1 4 2 3
-
- 4 1 3 2
- 3 2 1 4
- 2 3 4 1
- 1 4 2 3
-
-
-Solution number 237
-Possible solution set:
- 4 1 3 2 3 2 4 1 1 3 2 4 2 4 1 3
-
- 4 1 3 2
- 3 2 4 1
- 1 3 2 4
- 2 4 1 3
-
-
-Solution number 238
-Possible solution set:
- 4 1 3 2 3 2 4 1 1 4 2 3 2 3 1 4
-
- 4 1 3 2
- 3 2 4 1
- 1 4 2 3
- 2 3 1 4
-
-
-Solution number 239
+Solution number 40
 Possible solution set:
  4 1 3 2 3 2 4 1 2 3 1 4 1 4 2 3
 
@@ -2388,57 +398,7 @@ Possible solution set:
  1 4 2 3
 
 
-Solution number 240
-Possible solution set:
- 4 1 3 2 3 2 4 1 2 4 1 3 1 3 2 4
-
- 4 1 3 2
- 3 2 4 1
- 2 4 1 3
- 1 3 2 4
-
-
-Solution number 241
-Possible solution set:
- 4 2 1 3 1 3 2 4 2 4 3 1 3 1 4 2
-
- 4 2 1 3
- 1 3 2 4
- 2 4 3 1
- 3 1 4 2
-
-
-Solution number 242
-Possible solution set:
- 4 2 1 3 1 3 2 4 3 1 4 2 2 4 3 1
-
- 4 2 1 3
- 1 3 2 4
- 3 1 4 2
- 2 4 3 1
-
-
-Solution number 243
-Possible solution set:
- 4 2 1 3 1 3 4 2 2 1 3 4 3 4 2 1
-
- 4 2 1 3
- 1 3 4 2
- 2 1 3 4
- 3 4 2 1
-
-
-Solution number 244
-Possible solution set:
- 4 2 1 3 1 3 4 2 2 4 3 1 3 1 2 4
-
- 4 2 1 3
- 1 3 4 2
- 2 4 3 1
- 3 1 2 4
-
-
-Solution number 245
+Solution number 41
 Possible solution set:
  4 2 1 3 1 3 4 2 3 1 2 4 2 4 3 1
 
@@ -2448,47 +408,7 @@ Possible solution set:
  2 4 3 1
 
 
-Solution number 246
-Possible solution set:
- 4 2 1 3 1 3 4 2 3 4 2 1 2 1 3 4
-
- 4 2 1 3
- 1 3 4 2
- 3 4 2 1
- 2 1 3 4
-
-
-Solution number 247
-Possible solution set:
- 4 2 1 3 3 1 2 4 1 3 4 2 2 4 3 1
-
- 4 2 1 3
- 3 1 2 4
- 1 3 4 2
- 2 4 3 1
-
-
-Solution number 248
-Possible solution set:
- 4 2 1 3 3 1 2 4 1 4 3 2 2 3 4 1
-
- 4 2 1 3
- 3 1 2 4
- 1 4 3 2
- 2 3 4 1
-
-
-Solution number 249
-Possible solution set:
- 4 2 1 3 3 1 2 4 2 3 4 1 1 4 3 2
-
- 4 2 1 3
- 3 1 2 4
- 2 3 4 1
- 1 4 3 2
-
-
-Solution number 250
+Solution number 42
 Possible solution set:
  4 2 1 3 3 1 2 4 2 4 3 1 1 3 4 2
 
@@ -2498,37 +418,7 @@ Possible solution set:
  1 3 4 2
 
 
-Solution number 251
-Possible solution set:
- 4 2 1 3 3 1 4 2 1 3 2 4 2 4 3 1
-
- 4 2 1 3
- 3 1 4 2
- 1 3 2 4
- 2 4 3 1
-
-
-Solution number 252
-Possible solution set:
- 4 2 1 3 3 1 4 2 2 4 3 1 1 3 2 4
-
- 4 2 1 3
- 3 1 4 2
- 2 4 3 1
- 1 3 2 4
-
-
-Solution number 253
-Possible solution set:
- 4 2 3 1 1 3 2 4 2 1 4 3 3 4 1 2
-
- 4 2 3 1
- 1 3 2 4
- 2 1 4 3
- 3 4 1 2
-
-
-Solution number 254
+Solution number 43
 Possible solution set:
  4 2 3 1 1 3 2 4 2 4 1 3 3 1 4 2
 
@@ -2538,67 +428,7 @@ Possible solution set:
  3 1 4 2
 
 
-Solution number 255
-Possible solution set:
- 4 2 3 1 1 3 2 4 3 1 4 2 2 4 1 3
-
- 4 2 3 1
- 1 3 2 4
- 3 1 4 2
- 2 4 1 3
-
-
-Solution number 256
-Possible solution set:
- 4 2 3 1 1 3 2 4 3 4 1 2 2 1 4 3
-
- 4 2 3 1
- 1 3 2 4
- 3 4 1 2
- 2 1 4 3
-
-
-Solution number 257
-Possible solution set:
- 4 2 3 1 1 3 4 2 2 4 1 3 3 1 2 4
-
- 4 2 3 1
- 1 3 4 2
- 2 4 1 3
- 3 1 2 4
-
-
-Solution number 258
-Possible solution set:
- 4 2 3 1 1 3 4 2 3 1 2 4 2 4 1 3
-
- 4 2 3 1
- 1 3 4 2
- 3 1 2 4
- 2 4 1 3
-
-
-Solution number 259
-Possible solution set:
- 4 2 3 1 3 1 2 4 1 3 4 2 2 4 1 3
-
- 4 2 3 1
- 3 1 2 4
- 1 3 4 2
- 2 4 1 3
-
-
-Solution number 260
-Possible solution set:
- 4 2 3 1 3 1 2 4 2 4 1 3 1 3 4 2
-
- 4 2 3 1
- 3 1 2 4
- 2 4 1 3
- 1 3 4 2
-
-
-Solution number 261
+Solution number 44
 Possible solution set:
  4 2 3 1 3 1 4 2 1 3 2 4 2 4 1 3
 
@@ -2608,57 +438,7 @@ Possible solution set:
  2 4 1 3
 
 
-Solution number 262
-Possible solution set:
- 4 2 3 1 3 1 4 2 1 4 2 3 2 3 1 4
-
- 4 2 3 1
- 3 1 4 2
- 1 4 2 3
- 2 3 1 4
-
-
-Solution number 263
-Possible solution set:
- 4 2 3 1 3 1 4 2 2 3 1 4 1 4 2 3
-
- 4 2 3 1
- 3 1 4 2
- 2 3 1 4
- 1 4 2 3
-
-
-Solution number 264
-Possible solution set:
- 4 2 3 1 3 1 4 2 2 4 1 3 1 3 2 4
-
- 4 2 3 1
- 3 1 4 2
- 2 4 1 3
- 1 3 2 4
-
-
-Solution number 265
-Possible solution set:
- 4 3 1 2 1 2 3 4 2 1 4 3 3 4 2 1
-
- 4 3 1 2
- 1 2 3 4
- 2 1 4 3
- 3 4 2 1
-
-
-Solution number 266
-Possible solution set:
- 4 3 1 2 1 2 3 4 3 4 2 1 2 1 4 3
-
- 4 3 1 2
- 1 2 3 4
- 3 4 2 1
- 2 1 4 3
-
-
-Solution number 267
+Solution number 45
 Possible solution set:
  4 3 1 2 1 2 4 3 2 1 3 4 3 4 2 1
 
@@ -2668,67 +448,7 @@ Possible solution set:
  3 4 2 1
 
 
-Solution number 268
-Possible solution set:
- 4 3 1 2 1 2 4 3 2 4 3 1 3 1 2 4
-
- 4 3 1 2
- 1 2 4 3
- 2 4 3 1
- 3 1 2 4
-
-
-Solution number 269
-Possible solution set:
- 4 3 1 2 1 2 4 3 3 1 2 4 2 4 3 1
-
- 4 3 1 2
- 1 2 4 3
- 3 1 2 4
- 2 4 3 1
-
-
-Solution number 270
-Possible solution set:
- 4 3 1 2 1 2 4 3 3 4 2 1 2 1 3 4
-
- 4 3 1 2
- 1 2 4 3
- 3 4 2 1
- 2 1 3 4
-
-
-Solution number 271
-Possible solution set:
- 4 3 1 2 2 1 3 4 1 2 4 3 3 4 2 1
-
- 4 3 1 2
- 2 1 3 4
- 1 2 4 3
- 3 4 2 1
-
-
-Solution number 272
-Possible solution set:
- 4 3 1 2 2 1 3 4 1 4 2 3 3 2 4 1
-
- 4 3 1 2
- 2 1 3 4
- 1 4 2 3
- 3 2 4 1
-
-
-Solution number 273
-Possible solution set:
- 4 3 1 2 2 1 3 4 3 2 4 1 1 4 2 3
-
- 4 3 1 2
- 2 1 3 4
- 3 2 4 1
- 1 4 2 3
-
-
-Solution number 274
+Solution number 46
 Possible solution set:
  4 3 1 2 2 1 3 4 3 4 2 1 1 2 4 3
 
@@ -2738,57 +458,7 @@ Possible solution set:
  1 2 4 3
 
 
-Solution number 275
-Possible solution set:
- 4 3 1 2 2 1 4 3 1 2 3 4 3 4 2 1
-
- 4 3 1 2
- 2 1 4 3
- 1 2 3 4
- 3 4 2 1
-
-
-Solution number 276
-Possible solution set:
- 4 3 1 2 2 1 4 3 3 4 2 1 1 2 3 4
-
- 4 3 1 2
- 2 1 4 3
- 3 4 2 1
- 1 2 3 4
-
-
-Solution number 277
-Possible solution set:
- 4 3 2 1 1 2 3 4 2 1 4 3 3 4 1 2
-
- 4 3 2 1
- 1 2 3 4
- 2 1 4 3
- 3 4 1 2
-
-
-Solution number 278
-Possible solution set:
- 4 3 2 1 1 2 3 4 2 4 1 3 3 1 4 2
-
- 4 3 2 1
- 1 2 3 4
- 2 4 1 3
- 3 1 4 2
-
-
-Solution number 279
-Possible solution set:
- 4 3 2 1 1 2 3 4 3 1 4 2 2 4 1 3
-
- 4 3 2 1
- 1 2 3 4
- 3 1 4 2
- 2 4 1 3
-
-
-Solution number 280
+Solution number 47
 Possible solution set:
  4 3 2 1 1 2 3 4 3 4 1 2 2 1 4 3
 
@@ -2798,47 +468,7 @@ Possible solution set:
  2 1 4 3
 
 
-Solution number 281
-Possible solution set:
- 4 3 2 1 1 2 4 3 2 1 3 4 3 4 1 2
-
- 4 3 2 1
- 1 2 4 3
- 2 1 3 4
- 3 4 1 2
-
-
-Solution number 282
-Possible solution set:
- 4 3 2 1 1 2 4 3 3 4 1 2 2 1 3 4
-
- 4 3 2 1
- 1 2 4 3
- 3 4 1 2
- 2 1 3 4
-
-
-Solution number 283
-Possible solution set:
- 4 3 2 1 2 1 3 4 1 2 4 3 3 4 1 2
-
- 4 3 2 1
- 2 1 3 4
- 1 2 4 3
- 3 4 1 2
-
-
-Solution number 284
-Possible solution set:
- 4 3 2 1 2 1 3 4 3 4 1 2 1 2 4 3
-
- 4 3 2 1
- 2 1 3 4
- 3 4 1 2
- 1 2 4 3
-
-
-Solution number 285
+Solution number 48
 Possible solution set:
  4 3 2 1 2 1 4 3 1 2 3 4 3 4 1 2
 
@@ -2846,35 +476,5 @@ Possible solution set:
  2 1 4 3
  1 2 3 4
  3 4 1 2
-
-
-Solution number 286
-Possible solution set:
- 4 3 2 1 2 1 4 3 1 4 3 2 3 2 1 4
-
- 4 3 2 1
- 2 1 4 3
- 1 4 3 2
- 3 2 1 4
-
-
-Solution number 287
-Possible solution set:
- 4 3 2 1 2 1 4 3 3 2 1 4 1 4 3 2
-
- 4 3 2 1
- 2 1 4 3
- 3 2 1 4
- 1 4 3 2
-
-
-Solution number 288
-Possible solution set:
- 4 3 2 1 2 1 4 3 3 4 1 2 1 2 3 4
-
- 4 3 2 1
- 2 1 4 3
- 3 4 1 2
- 1 2 3 4
 
 

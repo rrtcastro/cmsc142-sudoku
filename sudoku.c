@@ -57,6 +57,60 @@ int checkBox(int candidate, list blankSpace, int **board){
 	return 1;
 }
 
+int checkEkis(int candidate, list blankSpace, int **board){
+
+	int i,j;
+
+	if((blankSpace.x == blankSpace.y)||(blankSpace.x+blankSpace.y == sizeOfBoard-1)){
+	
+		for(i=0, j=0; i<sizeOfBoard; i++, j++){
+			if(candidate == board[i][j])
+				return 0;
+		}
+		
+		for(i=sizeOfBoard-1, j=0; i>=0; i--, j++){
+			if(candidate == board[i][j])
+				return 0;
+		}
+	
+	}
+	
+	return 1;
+
+}
+
+int checkHuay(int candidate, list blankSpace, int **board){
+
+	int i, j;
+	
+	if(sizeOfBoard%2==0)	return 1;
+	
+	i=0, j=0;
+	while(i<sizeOfBoard){
+	
+		if(candidate == board[i][j])
+				return 0;
+	
+		if((int)(sizeOfBoard/2) != j) j++;
+		i++;
+	
+	}
+	
+	i=0, j=0;
+	while(i<sizeOfBoard){
+	
+		if(candidate == board[i][j])
+				return 0;
+	
+		if((int)(sizeOfBoard/2) != j) j++;
+		i++;
+	
+	}
+	
+	return 1;
+
+}
+
 void createBoard(int ***board){
 	int i,j;
 
@@ -125,7 +179,7 @@ int main(int argc, char *argv[]){
 	int **board;
 	int numOfZero;
 	char *filename;
-	int row=0, column=0, box=0;
+	int row=0, column=0, box=0, ekis=0, huay=0;
 	
 	if(argc < 2){
 		printf("To run: ./executable_file input.in > output_file\n");
@@ -188,12 +242,20 @@ int main(int argc, char *argv[]){
 					row=checkRow(candidate, blankSpaces[move-1], board);
 					column=checkColumn(candidate, blankSpaces[move-1], board);
 					box=checkBox(candidate, blankSpaces[move-1], board);
+					ekis=checkEkis(candidate, blankSpaces[move-1], board);
+					huay=checkHuay(candidate, blankSpaces[move-1], board);
 					
-					if(row && column && box){
+					if(row && column && box && ekis){
+					
 						for(i=move-1;i>=1;i--){
 							if(candidate==option[i][nopts[i]] && (blankSpaces[i-1].x==blankSpaces[move-1].x || 
 								blankSpaces[i-1].y==blankSpaces[move-1].y || ((int)(blankSpaces[i-1].x/sqrt(sizeOfBoard))==(int)(blankSpaces[move-1].x/sqrt(sizeOfBoard)) && 
 									(int)(blankSpaces[i-1].y/sqrt(sizeOfBoard))==(int)(blankSpaces[move-1].y/sqrt(sizeOfBoard))))) break;
+							
+							if(((blankSpaces[move-1].x == blankSpaces[move-1].y && blankSpaces[i-1].x == blankSpaces[i-1].y) || (blankSpaces[move-1].x + blankSpaces[move-1].y == sizeOfBoard - 1 && blankSpaces[i-1].x + blankSpaces[i-1].y == sizeOfBoard - 1)) && (candidate==option[i][nopts[i]])){
+								break;	
+							}
+							
 						}
 						if(i==0)
 							option[move][++nopts[move]]=candidate;
