@@ -9,6 +9,7 @@
 
         <link rel="stylesheet" href="css/normalize.min.css">
         <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/sudoku.css">
 
         <!--[if lt IE 9]>
             <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -39,10 +40,24 @@
                     <h3>Load Input File</h3>
                     <input id="file-input" type="file"></input>
                 </aside>
-
-                <div id="sudoku-table-wrapper">
-                   <textarea id="solution-textarea" rows="15" cols="60"></textarea>
+                <div id="sudoku-board-wrapper">
+                  
                 </div>
+
+                <aside id="control-panel" style="display:none; float:right">
+                    <input id="prev-puzzle-button" type="button" value="Prev Puzzle"/>
+                    <input id="next-puzzle-button" type="button" value="Next Puzzle"/>
+                    <br/>
+                    <label for="sudoku-x">Sudoku X</label>
+                    <input name="sudoku-x" id="sudoku-x-checkbox" type="checkbox" value="Sudoku X"/>
+                    <label for="sudoku-y">Sudoku Y</label>
+                    <input name="sudoku-y" id="sudoku-y-checkbox" type="checkbox" value="Sudoku Y"/>
+                    <br/>
+                    <input id="sudoku-check-button" type="button" value="Check"/>
+                    <br/>
+                    <textarea id="solution-textarea"></textarea>
+                </aside>
+
             </div> <!-- #main -->
         </div> <!-- #main-container -->
 

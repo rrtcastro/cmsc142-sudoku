@@ -2,7 +2,7 @@ var sizeOfBoard = -1; //stupid ass GLOBAL
 
 $(document).ready(function(){
 	var $fileInput = $('#file-input');
-
+	var $sudokuBoardWrapper = $('#sudoku-board-wrapper');
 	var reader = new FileReader();
 
 	//load file on filechooser value changed
@@ -13,6 +13,78 @@ $(document).ready(function(){
 
 	//process file on load
 	reader.onload = function(){processFile(reader);}; //async function call
+
+	$('#prev-puzzle-button').on('click', function(){
+
+	});
+
+	$('#next-puzzle-button').on('click', function(){
+
+		$currentTable = $sudokuBoardWrapper.find('table:visible');
+		if($currentTable.next().length > 0){
+			$sudokuBoardWrapper.children('table:visible').hide().next().show()
+		}else{
+			$sudokuBoardWrapper.children('table:visible').hide();
+			$sudokuBoardWrapper.children('table').first().show();
+		}
+		
+	})
+
+	$('#sudoku-check-button').on('click',function(){
+		var sudokuXEnabled = $('#sudoku-x-checkbox').is(':checked');
+		var sudokuYEnabled = $('#sudoku-y-checkbox').is(':checked');
+
+		$currentTable = $sudokuBoardWrapper.find('table:visible');
+		var $rows = $currentTable.find('tr');
+
+		if(sudokuXEnabled && sudokuYEnabled){
+
+		}else if(sudokuXEnabled){
+
+		}else if(sudokuYEnabled){
+
+		}else{
+			var values = new Array($rows.length);
+			for(var i = 0 ; i < values.length; i++){
+				values[i] = i+1;
+			}
+			console.log(values);
+			var checker = values.slice(0); //array to check if solution is valid
+			console.log(checker);
+			var valid = true;//check if solution is valid
+			for(var i = 0; i < $rows.length && valid; i++){
+				var $cols = $($rows[i]).find('td');
+				checker = values.slice(0);
+				for(var j = 0; j < $cols.length; j++){
+					console.log(j);
+					var val = -1;
+					if($($cols[j]).children().length == 0){
+						val = parseInt($($cols[j]).text());
+					}else{
+						if($($cols[j]).find('input')[0].length != 0)
+							val = parseInt($($cols[j]).find('input').val());
+						else{
+							valid = false;
+							break;
+						}
+					}
+
+					//console.log("val:"+val);
+					var index = checker.indexOf(val);
+					//console.log("index"+index);
+					if(index > -1){
+						checker.splice(index, 1);
+					}else{
+						valid = false;
+						break;
+					}
+
+				};
+			}
+
+			alert(valid);
+		}
+	});
 
 });
 
@@ -44,6 +116,7 @@ function processFile(reader){
     	var numOfZero = result[1];
 
     	printBoard(board); //print board for debugging
+    	displayBoard(board, caseNumber);
 
     	var blankSpaces = createArrayOfZero(board, numOfZero);
 
@@ -177,6 +250,10 @@ function processFile(reader){
 		$('#solution-textarea').append(document.createTextNode(solutionStr)); //proper appending
     }
 
+    if(numCases > 0){
+    	$('#sudoku-check-button').parent().show();
+    }
+
 }
 
 
@@ -193,6 +270,32 @@ function printBoard(board){
 	}
 }
 
+/* ==== UI FUNCTIONS ====*/
+function displayBoard(board, caseNumber){
+	$boardWrapper = $('#sudoku-board-wrapper');
+
+	var boardHTML = "<table class='sudoku' id='sudoku-board-caseNumber' "+(caseNumber==0?'':'style="display:none"')+">"; 
+
+	for(var i = 0; i < board.length; i++){
+		var rowHTML = "<tr>";
+		for(var j = 0; j < board[i].length; j++){
+			var columnHTML = "<td>";
+			if(board[i][j] == 0){
+				columnHTML += "<input id='test' class='sudoku' type='number' min='1' max='9'/>";
+			}else{
+				columnHTML += board[i][j];
+			}
+			columnHTML += "</td>";
+			rowHTML += columnHTML;
+		}
+		rowHTML += "</tr>";
+		boardHTML += rowHTML;
+	}
+
+	boardHTML += "</table>";
+
+	$boardWrapper.append(boardHTML);
+}
 /* ==== BOARD FUNCTIONS ====*/
 
 function createArrayOfZero(board, numOfZero){
