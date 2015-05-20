@@ -15,7 +15,14 @@ $(document).ready(function(){
 	reader.onload = function(){processFile(reader);}; //async function call
 
 	$('#prev-puzzle-button').on('click', function(){
-
+		$currentTable = $sudokuBoardWrapper.find('table:visible');
+		if($currentTable.prev().length > 0){
+			$sudokuBoardWrapper.children('table:visible').hide().prev().show()
+		}else{
+			$sudokuBoardWrapper.children('table:visible').hide();
+			$sudokuBoardWrapper.children('table').last().show();
+		}
+		
 	});
 
 	$('#next-puzzle-button').on('click', function(){
@@ -30,60 +37,9 @@ $(document).ready(function(){
 		
 	})
 
-	$('#sudoku-check-button').on('click',function(){
-		var sudokuXEnabled = $('#sudoku-x-checkbox').is(':checked');
-		var sudokuYEnabled = $('#sudoku-y-checkbox').is(':checked');
-
-		$currentTable = $sudokuBoardWrapper.find('table:visible');
-		var $rows = $currentTable.find('tr');
-
-		if(sudokuXEnabled && sudokuYEnabled){
-
-		}else if(sudokuXEnabled){
-
-		}else if(sudokuYEnabled){
-
-		}else{
-			var values = new Array($rows.length);
-			for(var i = 0 ; i < values.length; i++){
-				values[i] = i+1;
-			}
-			console.log(values);
-			var checker = values.slice(0); //array to check if solution is valid
-			console.log(checker);
-			var valid = true;//check if solution is valid
-			for(var i = 0; i < $rows.length && valid; i++){
-				var $cols = $($rows[i]).find('td');
-				checker = values.slice(0);
-				for(var j = 0; j < $cols.length; j++){
-					console.log(j);
-					var val = -1;
-					if($($cols[j]).children().length == 0){
-						val = parseInt($($cols[j]).text());
-					}else{
-						if($($cols[j]).find('input')[0].length != 0)
-							val = parseInt($($cols[j]).find('input').val());
-						else{
-							valid = false;
-							break;
-						}
-					}
-
-					//console.log("val:"+val);
-					var index = checker.indexOf(val);
-					//console.log("index"+index);
-					if(index > -1){
-						checker.splice(index, 1);
-					}else{
-						valid = false;
-						break;
-					}
-
-				};
-			}
-
-			alert(valid);
-		}
+	$('#sudoku-check-button').on('click', function(){
+		var valid = isSolutionValid();
+		alert(valid);
 	});
 
 });
@@ -277,13 +233,13 @@ function displayBoard(board, caseNumber){
 	var boardHTML = "<table class='sudoku' id='sudoku-board-caseNumber' "+(caseNumber==0?'':'style="display:none"')+">"; 
 
 	for(var i = 0; i < board.length; i++){
-		var rowHTML = "<tr>";
+		var rowHTML = "<tr class='sudoku-row'>";
 		for(var j = 0; j < board[i].length; j++){
-			var columnHTML = "<td>";
+			var columnHTML = "";
 			if(board[i][j] == 0){
-				columnHTML += "<input id='test' class='sudoku' type='number' min='1' max='9'/>";
+				columnHTML += "<td class='sudoku-element-blank'><input id='test' class='sudoku' type='number' min='1' max='9'/>";
 			}else{
-				columnHTML += board[i][j];
+				columnHTML += "<td class='sudoku-element'><span>"+board[i][j]+"</span";
 			}
 			columnHTML += "</td>";
 			rowHTML += columnHTML;
@@ -294,9 +250,119 @@ function displayBoard(board, caseNumber){
 
 	boardHTML += "</table>";
 
-	$boardWrapper.append(boardHTML);
+	$board = $($.parseHTML(boardHTML));
+	$boardWrapper.append($board);
+	var boardWidth = $board .width();
+	$board.css({'height':boardWidth*0.75+'px'});
+	
 }
+
+function getBoardValueAt(row, col){
+	var $table = $('#sudoku-board-wrapper').find('table:visible');
+	var $rows = $table.find('tr');
+	var row = $rows[row];
+	var element = $(row).children('td')[col];
+	var val = -1;
+	if($(element).hasClass('sudoku-element')){
+		val = parseInt($(element).find('span').text());
+	}else{
+		val = parseInt($(element).children('input').val());
+		if(!(val > 0 && val <= $rows.length)){
+			val = -1;
+		}
+	}
+
+	return val;
+}
+
 /* ==== BOARD FUNCTIONS ====*/
+function isSolutionValid(){
+	var sudokuXEnabled = $('#sudoku-x-checkbox').is(':checked');
+	var sudokuYEnabled = $('#sudoku-y-checkbox').is(':checked');
+
+	$currentTable = $('#sudoku-board-wrapper').find('table:visible');
+	var $rows = $currentTable.find('tr');
+
+
+	var values = new Array($rows.length);
+	for(var i = 0 ; i < values.length; i++){
+		values[i] = i+1;
+	}
+	var checker = values.slice(0); //array to check if solution is valid
+	var valid = true;//check if solution is valid
+
+	var boardSize = $rows.length;
+
+	//Check if all rows have valid input
+	for(var i = 0; i < boardSize && valid; i++){
+		checker = values.slice(0); //refill checker
+		for(var j = 0; j < boardSize && valid; j++){
+			var val = getBoardValueAt(i, j);
+			var index = checker.indexOf(val);
+			//console.log(val+ " " + index);
+			index > -1? checker.splice(index, 1) : valid = false;
+		};
+	}
+
+	//Check if all cols have valid input
+	for(var i = 0; i < boardSize && valid; i++){
+		checker = values.slice(0); //refill checker
+		for(var j = 0; j < boardSize && valid; j++){
+			var val = getBoardValueAt(j, i);
+			var index = checker.indexOf(val);
+			//console.log(val+ " " + index);
+			index > -1? checker.splice(index, 1) : valid = false;
+		};
+	}
+
+	//Check if all boxes have valid input
+	var boxSize = sqrt(boardSize);
+	for(var h = 0; h < boxSize && valid; h++){//row boxes
+		for(var i = 0; i < boxSize && valid; i++){ //box columns
+			checker = values.slice(0);
+			for(var j = i*boxSize; j < i*boxSize + boxSize && valid; j++){//rows per box
+				for(var k = h*boxSize; k < h*boxSize + boxSize && valid; k++){//columns per box
+					var val = getBoardValueAt(j, k);
+					var index = checker.indexOf(val);
+					//console.log(val+ " " + index);
+					index > -1? checker.splice(index, 1) : valid = false;
+				}
+			}
+		}
+	}
+	
+
+	if(sudokuXEnabled){
+		//check diagonals
+		checker = values.slice(0); //refill checker
+		var checker2 = values.slice(0);
+		for(var i = 0; i < boardSize && valid; i++){
+			var val = getBoardValueAt(i, i);
+			var index = checker.indexOf(val);
+			index > -1? checker.splice(index, 1) : valid = false;
+
+			val = getBoardValueAt(i, (boardSize-1) - i);
+			index = checker2.indexOf(val);
+			index > -1? checker2.splice(index, 1) : valid = false;
+		}
+	}
+
+	if(sudokuYEnabled){
+		checker = values.slice(0); //refill checker
+		var checker2 = values.slice(0);
+		for(var i = 0, j = 0; i < boardSize && valid; i++, (j<boardSize/2 - 1?j++:j)){ //stop column increment at middle
+			var val = getBoardValueAt(i, j);
+			var index = checker.indexOf(val);
+			index > -1? checker.splice(index, 1) : valid = false;
+
+			val = getBoardValueAt(i, (boardSize-1) - j);
+			index = checker2.indexOf(val);
+			index > -1? checker2.splice(index, 1) : valid = false;
+		}
+	}
+	
+	return valid;
+}
 
 function createArrayOfZero(board, numOfZero){
 	var blankSpaces = [];
