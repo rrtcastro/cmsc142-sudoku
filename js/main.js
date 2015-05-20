@@ -17,10 +17,13 @@ $(document).ready(function(){
 	$('#prev-puzzle-button').on('click', function(){
 		$currentTable = $sudokuBoardWrapper.find('table:visible');
 		if($currentTable.prev().length > 0){
-			$sudokuBoardWrapper.children('table:visible').hide().prev().show()
+			$sudokuBoardWrapper.children('table:visible').fadeOut(500, function(){
+				$(this).prev().fadeIn(500);
+			});
 		}else{
-			$sudokuBoardWrapper.children('table:visible').hide();
-			$sudokuBoardWrapper.children('table').last().show();
+			$sudokuBoardWrapper.children('table:visible').fadeOut(500, function(){
+				$sudokuBoardWrapper.children('table').last().fadeIn(500);
+			});
 		}
 		
 	});
@@ -29,12 +32,14 @@ $(document).ready(function(){
 
 		$currentTable = $sudokuBoardWrapper.find('table:visible');
 		if($currentTable.next().length > 0){
-			$sudokuBoardWrapper.children('table:visible').hide().next().show()
+			$sudokuBoardWrapper.children('table:visible').fadeOut(500, function(){
+				$(this).next().fadeIn(500);
+			})
 		}else{
-			$sudokuBoardWrapper.children('table:visible').hide();
-			$sudokuBoardWrapper.children('table').first().show();
+			$sudokuBoardWrapper.children('table:visible').fadeOut(500, function(){
+				$sudokuBoardWrapper.children('table').first().fadeIn(500);
+			});
 		}
-		
 	})
 
 	$('#sudoku-check-button').on('click', function(){
@@ -42,9 +47,19 @@ $(document).ready(function(){
 		alert(valid);
 	});
 
+	$('#karaoke-button').on('click', function(){
+		$('.header-container,.footer-container').fadeOut(2000);
+		$('.main-container').fadeTo(2000, 0.75, function(){
+			var videoHTML = '<video class="karaoke-video" src="video/kabet.mkv" autoplay/>';
+			$('body').prepend(videoHTML);
+		})
+	});
+
 });
 
 function processFile(reader){
+	$('#sudoku-board-wrapper').empty();
+	
 	var text = reader.result;
 
 	// split by lines
@@ -72,6 +87,7 @@ function processFile(reader){
     	var numOfZero = result[1];
 
     	printBoard(board); //print board for debugging
+
     	displayBoard(board, caseNumber);
 
     	var blankSpaces = createArrayOfZero(board, numOfZero);
@@ -207,7 +223,7 @@ function processFile(reader){
     }
 
     if(numCases > 0){
-    	$('#sudoku-check-button').parent().show();
+    	$('#sudoku-control-panel').fadeIn(500);
     }
 
 }
@@ -225,12 +241,11 @@ function printBoard(board){
 		console.log(board[i]);
 	}
 }
-
 /* ==== UI FUNCTIONS ====*/
 function displayBoard(board, caseNumber){
 	$boardWrapper = $('#sudoku-board-wrapper');
 
-	var boardHTML = "<table class='sudoku' id='sudoku-board-caseNumber' "+(caseNumber==0?'':'style="display:none"')+">"; 
+	var boardHTML = "<table class='sudoku' id='sudoku-board-caseNumber' style='display:none'>"; 
 
 	for(var i = 0; i < board.length; i++){
 		var rowHTML = "<tr class='sudoku-row'>";
@@ -249,12 +264,11 @@ function displayBoard(board, caseNumber){
 	}
 
 	boardHTML += "</table>";
-
-	$board = $($.parseHTML(boardHTML));
-	$boardWrapper.append($board);
-	var boardWidth = $board .width();
-	$board.css({'height':boardWidth*0.75+'px'});
 	
+	$boardWrapper.append(boardHTML);
+	if(caseNumber==0){
+		$boardWrapper.find("table").last().fadeIn(2500);
+	}
 }
 
 function getBoardValueAt(row, col){

@@ -1,6 +1,34 @@
-aside{
-	margin-top: 10px;
-	margin-bottom: 30px;
+#karaoke-button{
+	color: black;
+}
+
+video.karaoke-video{
+	position: fixed;
+	opacity: 1.0 !important;
+	top: 50%;
+	left: 50%;
+	min-width: 100%;
+	min-height: 100%;
+	width: auto;
+	height: auto;
+	z-index: -100;
+	-webkit-transform: translateX(-50%) translateY(-50%);
+	transform: translateX(-50%) translateY(-50%);
+	background: url(img/randall-poster.jpg) no-repeat;
+	background-size: cover;
+}
+
+#sudoku-board-wrapper{
+	width: 100%;
+}
+
+.clear{
+	clear:both;
+	padding: 2%;
+}
+
+aside input{
+	color: #000;
 }
 
 aside label{
@@ -8,23 +36,30 @@ aside label{
 }
 
 table.sudoku{
-    width: 100%;
-    height: 100%;
+	width: 90vw;
+	height:90vw;
 	border: 4px solid;
 	border-color: #e44d26;
 }
 
 table.sudoku td{
-	text-align: center;
-	
 	border: 2px solid;
 	border-color: #e44d26;
-	color: #f16529;
+	text-align: center;
+	color: #e44d26;
 }
 
 table.sudoku td.sudoku-element{
 	font-weight: bolder;
-	font-size: 150%;
+	color: #fff;
+	background-color: #e44d26;;
+	font-size: 400%;
+}
+
+table.sudoku td.sudoku-element-blank input{
+	border: none;
+    background-color: transparent;
+    font-size: 300%;
 }
 
 input.sudoku{
@@ -55,30 +90,54 @@ input.sudoku::-webkit-inner-spin-button {
 }
 
 @media only screen and (min-width: 480px) {
-    #sudoku-board-wrapper{
-		margin: 0 auto;
-	}
-
     table.sudoku{
 		width: 100%;
-
-		margin: 0 auto;
 	}
 
 	#solution-textarea{
 		width: 100%;
 	}
+
+	aside{
+		margin-top: 5%;
+		width:90%;
+	}
+
+	.clear{
+		clear:both;
+	}
 }
 
 
 @media only screen and (min-width: 768px) {
-    table.sudoku{
-		width: 40%;
+	#sudoku-board-wrapper{
+		width:55%;
+		float: left;
+	}
+
+	table.sudoku{
+		width: 55vw;
+		height:55vw;
+	}
+
+	aside{
+		width:25%;
+	}
+
+	.clear{
+		clear:none;
+		padding: 0;
 	}
 }
 
 @media only screen and (min-width: 1140px) {
-  	table.sudoku{
-		width: 40%;
+	#sudoku-board-wrapper{
+		width:55%;
+		float:left;
+	}
+
+	table.sudoku{
+		width: 100%;
+		height:35vw;
 	}
 }
