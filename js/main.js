@@ -16,6 +16,29 @@ $(document).ready(function(){
 	var $sudokuBoardWrapper = $('#sudoku-board-wrapper');
 	var reader = new FileReader();
 
+	//http://stackoverflow.com/questions/3814231/loading-an-image-to-a-img-from-input-file
+	var imageInput = document.getElementById('image-input');
+	imageInput.onchange = function (evt) {
+
+	    var tgt = evt.target || window.event.srcElement,
+		        files = tgt.files;
+
+		    // FileReader support
+		    if (FileReader && files && files.length) {
+		        var fr = new FileReader();
+		        fr.onload = function () {
+		            document.getElementById("image-output").src = fr.result;
+		        }
+		        fr.readAsDataURL(files[0]);
+		    }
+
+		OCRAD(document.getElementById("image-output"),function(text){
+	    	text = fixText(text); 
+	    	alert(text);
+	    	processFile('',text);
+	    });
+	}
+
 	//load file on filechooser value changed
 	$fileInput.on('change', function(){
 		var file = $fileInput[0].files[0];
@@ -23,10 +46,10 @@ $(document).ready(function(){
 	});
 
 	//process file on load
-	reader.onload = function(){processFile(reader);}; //async function call
+	reader.onload = function(){processFile(reader,'');}; //async function call
 
 	$.get('input.in', function(data) {
-		processFile({result:data});
+		processFile({result:data},'');
 	});
 
 	$('#prev-puzzle-button').on('click', function(){
@@ -150,6 +173,49 @@ $(document).ready(function(){
 
 });
 
+function fixText(text){
+
+	var i, j;
+	var size;
+	var res = text.replace(/o/gi,'0');
+	res = res.replace('l','1');
+	res = res.replace(/s/gi,'5');
+	res = res.replace(/[a-zA-Z]/g,'0');
+
+	var origText = '';
+
+	var lines = res.split('\n');
+	for(i=0; i < lines.length - 1; i++){
+		var numbers = lines[i].split(' ');
+
+		for(j=0; j < numbers.length; j++){
+
+			origText = origText + numbers[j] + ' ';
+
+		}
+
+		if(i==0)
+			size = j;
+
+		for(var k = j; k < size; k++){
+
+			origText = origText + '0 ';
+
+		}
+
+
+		origText = origText + '\n';
+
+
+	}
+
+	origText = sqrt(size) + '\n' + origText;
+	origText = '1\n' + origText;
+
+	return origText;
+
+}
+
 var currentSolution = 0;
 function displaySolutions(board, solutions){
 	var $sudokuBoardWrapper = $('#sudoku-board-wrapper');
@@ -229,10 +295,15 @@ function hideSolutions(){
 	});
 }
 
-function processFile(reader){
+function processFile(reader, input){
 	$('#sudoku-board-wrapper').children('table').remove();
-	
-	var text = reader.result;
+	var text;
+
+	if(input=='')
+		text = reader.result;
+
+	else
+		text = input;
 
 	// split by lines
     var lines = text.split('\n');

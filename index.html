@@ -80,8 +80,12 @@
                         <br/>
                         <h4>Log</h4>
                         <textarea id="solution-textarea"></textarea>
-                        <h4>Load From Text or Image</h4>
+                        <h4>Load From Text</h4>
                         <input id="file-input" type="file"></input>
+                        <h4>Load From Image</h4>
+                        <input id="image-input" type="file"></input>
+
+                        <img src="" id="image-output" style="display:none"/>
                     </div>
                 </aside>
             </div> <!-- #main -->
@@ -108,6 +112,7 @@
 
         <!--script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.js"></script-->
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.js"><\/script>')</script>
+        <script src='js/vendor/ocrad.js'></script>
         <script src="js/main.js"></script>
     </body>
 </html>
