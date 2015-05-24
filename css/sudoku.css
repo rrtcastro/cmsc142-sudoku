@@ -2,6 +2,8 @@
 	color: black;
 }
 
+
+
 video.karaoke-video{
 	position: fixed;
 	opacity: 1.0 !important;
@@ -10,21 +12,49 @@ video.karaoke-video{
 	min-width: 100%;
 	min-height: 100%;
 	width: auto;
-	height: auto;
+	height: 80%;
 	z-index: -100;
 	-webkit-transform: translateX(-50%) translateY(-50%);
 	transform: translateX(-50%) translateY(-50%);
-	background: url(img/randall-poster.jpg) no-repeat;
 	background-size: cover;
+	background-color: #000;
 }
 
 #sudoku-board-wrapper{
 	width: 100%;
+	border-radius: 25px;
+}
+
+#solution-label{
+	color: #e44d26;
 }
 
 .clear{
 	clear:both;
 	padding: 2%;
+}
+
+#karaoke-songlist{
+	float:left;
+	width: 15%;
+	margin-top:10%;
+	margin-bottom: 10%;
+	margin-left:1%;
+	margin-right:1%;
+}
+
+#song-table{
+	width: 100%;
+	color: #e44d26;
+}
+
+#karaoke-songlist input{
+	color: #e44d26;
+}
+
+aside{
+	border-radius: 25px;
+	margin-bottom: 5%;
 }
 
 aside input{
@@ -38,8 +68,9 @@ aside label{
 table.sudoku{
 	width: 90vw;
 	height:90vw;
-	border: 4px solid;
+	border: 2px solid;
 	border-color: #e44d26;
+	border-collapse:solid;
 }
 
 table.sudoku td{
@@ -52,12 +83,19 @@ table.sudoku td{
 table.sudoku td.sudoku-element{
 	font-weight: bolder;
 	color: #fff;
-	background-color: #e44d26;;
+	background-color: #e44d26;
+	border-color: #e44d26!important;
 	font-size: 400%;
 }
 
 table.sudoku td.sudoku-element-blank input{
 	border: none;
+    background-color: transparent;
+    font-size: 300%;
+}
+
+table.sudoku td.sudoku-element-solved {
+	border: 2px solid;
     background-color: transparent;
     font-size: 300%;
 }

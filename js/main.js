@@ -1,4 +1,15 @@
 var sizeOfBoard = -1; //stupid ass GLOBAL
+var solutions = [];
+var karaokeMode = false;
+var puzzles = [];
+var currentPuzzleIndex = 0;
+
+/*
+solutions:[],
+solutionsX:[],
+solutionsY:[],
+solutionsXY:[]
+*/
 
 $(document).ready(function(){
 	var $fileInput = $('#file-input');
@@ -14,16 +25,22 @@ $(document).ready(function(){
 	//process file on load
 	reader.onload = function(){processFile(reader);}; //async function call
 
+	$.get('input.in', function(data) {
+		processFile({result:data});
+	});
+
 	$('#prev-puzzle-button').on('click', function(){
 		$currentTable = $sudokuBoardWrapper.find('table:visible');
 		if($currentTable.prev().length > 0){
 			$sudokuBoardWrapper.children('table:visible').fadeOut(500, function(){
 				$(this).prev().fadeIn(500);
 			});
+			currentPuzzleIndex--;
 		}else{
 			$sudokuBoardWrapper.children('table:visible').fadeOut(500, function(){
 				$sudokuBoardWrapper.children('table').last().fadeIn(500);
 			});
+			currentPuzzleIndex = $sudokuBoardWrapper.children().length - 1;
 		}
 		
 	});
@@ -35,30 +52,185 @@ $(document).ready(function(){
 			$sudokuBoardWrapper.children('table:visible').fadeOut(500, function(){
 				$(this).next().fadeIn(500);
 			})
+			currentPuzzleIndex++;
 		}else{
 			$sudokuBoardWrapper.children('table:visible').fadeOut(500, function(){
 				$sudokuBoardWrapper.children('table').first().fadeIn(500);
 			});
+			currentPuzzleIndex = 0;
 		}
 	})
 
 	$('#sudoku-check-button').on('click', function(){
 		var valid = isSolutionValid();
-		alert(valid);
+		if(valid){
+
+			if(karaokeMode){
+				var videoHTML = '<video class="karaoke-video" class="karaoke-video" src="video/score.mkv" autoplay/>';
+				$('#video-wrapper').html(videoHTML);
+				$('video.karaoke-video')[0].addEventListener('loadedmetadata', function(){
+					this.currentTime = 4;
+				}, false);	
+			}else{
+				alert("Congratulations! You solved the puzzle.");
+			}
+				
+		}else{
+			alert("Aw :(, There's something wrong with your solution. Find the problem and try again");
+		}
 	});
 
 	$('#karaoke-button').on('click', function(){
 		$('.header-container,.footer-container').fadeOut(2000);
-		$('.main-container').fadeTo(2000, 0.75, function(){
-			var videoHTML = '<video class="karaoke-video" src="video/kabet.mkv" autoplay/>';
-			$('body').prepend(videoHTML);
-		})
+		$('#karaoke-songlist').fadeIn(2000);
+		$('.main-container').fadeTo(2000, 0.75)
+		var videoHTML = '<video class="karaoke-video" class="karaoke-video" src="video/13579.mkv" autoplay/>';
+		$('#video-wrapper').html(videoHTML);
+		karaokeMode = true;
+		$('#karaoke-singet')[0].play();
+	});
+
+
+	$('#song-picker').on("keyup", function(e){
+		if(e.keyCode == 13){//ENTER KEY
+			var val = $(this).val();
+			$(this).val('');
+			
+			var songNumber = $('#song-table tr#'+val+' td.song-number span').text();
+
+			if(songNumber != ''){
+				var videoHTML = '<video class="karaoke-video" src="video/'+songNumber+'.mkv" autoplay/>';
+				$('#video-wrapper').html(videoHTML);
+				$('#karaoke-singet')[0].play();	
+			}
+			
+		}
+	})
+
+	$('#song-picker').on("keydown", function(e){
+		if($(this).val().length < 5 && e.keyCode >= 48 && e.keyCode <= 57){
+			var number = e.keyCode - 48;
+			$('#karaoke-'+number)[0].cloneNode().play();
+		}else if(!(e.keyCode == 8)){
+			e.preventDefault();
+		}
+	})
+
+	$('#sudoku-showsolutions-button').on("click", function(){
+		if($(this).val() == 'Show Solutions'){
+			var puzzle = puzzles[currentPuzzleIndex];
+
+			var sudokuXEnabled = $('#sudoku-x-checkbox').is(':checked');
+			var sudokuYEnabled = $('#sudoku-y-checkbox').is(':checked');
+
+			var solutions;
+			if(sudokuXEnabled && sudokuYEnabled){
+				solutions = puzzle.solutionsXY;
+			}else if(sudokuXEnabled){
+				solutions = puzzle.solutionsX;
+			}else if(sudokuYEnabled){
+				solutions = puzzle.solutionsY;
+			}else{
+				solutions = puzzle.solutions;
+			}
+
+			if(solutions.length > 0){
+				displaySolutions(puzzle.board, solutions);
+				$(this).val("Hide Solutions");
+				$('#sudoku-control-panel').fadeOut(500);
+			}else{
+				alert("There are no solutions. sorry.");
+			}
+		}else{
+			hideSolutions();
+			$('#sudoku-control-panel').fadeIn(500);
+		}
+		
 	});
 
 });
 
+var currentSolution = 0;
+function displaySolutions(board, solutions){
+	var $sudokuBoardWrapper = $('#sudoku-board-wrapper');
+	var $table = $('#sudoku-board-wrapper').find('table:visible');
+
+	var controlPanelHTML = "<div id='solutions-control'><input id='prev-solution' type='button' value='Prev'/>";
+	controlPanelHTML += "<input id='next-solution' type='button' value='Next'/>";
+	controlPanelHTML += "<span id='solution-label'>Solution <span id='solution-number'></span> of <span id='solution-count'>"+solutions.length+"</span></span></div>";
+	var $solutionsWrapper = $('#solutions-wrapper');	
+	$solutionsWrapper.prepend(controlPanelHTML);
+	$('#prev-solution').on("click", function(){
+		$('#sudoku-solution-board').fadeOut(500, function(){
+			$(this).remove();
+
+			--currentSolution<0?currentSolution = solutions.length-1:-1;
+			displaySolution(board, solutions[currentSolution], currentSolution );
+		})
+		
+	});
+	$('#next-solution').on("click", function(){
+		$('#sudoku-solution-board').fadeOut(500, function(){
+			$(this).remove();
+
+			++currentSolution>=solutions.length? currentSolution = 0:-1;
+			displaySolution(board, solutions[currentSolution], currentSolution);
+		});
+	});
+
+	$table.fadeOut(500, function(){
+		displaySolution(board, solutions[0], 0);
+		$solutionsWrapper.fadeIn(500);
+	});
+}
+
+function displaySolution(origBoard, solution, index){
+	$('#solution-number').text(""+(index + 1));
+	currentSolution = index;
+
+	var board = solution;
+
+	var $solutionsWrapper = $('#solutions-wrapper');
+
+	var boardHTML = "<table class='sudoku' id='sudoku-solution-board' style='display:none'>"; 
+
+	for(var i = 0; i < board.length; i++){
+		var rowHTML = "<tr class='sudoku-row'>";
+		for(var j = 0; j < board[i].length; j++){
+			var columnHTML = "";
+			if(origBoard[i][j] == 0){
+				columnHTML += "<td class='sudoku-element-solved'><span>"+board[i][j]+"</span";
+			}else{
+				columnHTML += "<td class='sudoku-element'><span>"+board[i][j]+"</span";
+			}
+			columnHTML += "</td>";
+			rowHTML += columnHTML;
+		}
+		rowHTML += "</tr>";
+		boardHTML += rowHTML;
+	}
+
+	boardHTML += "</table>";
+	
+	$solutionsWrapper.append(boardHTML);
+	var $newTable = $solutionsWrapper.find("table").last();
+	var boxSize = sqrt(board.length);
+	$newTable.find("td:nth-child("+boxSize+"n)").css("border-right", "solid");
+	$newTable.find("tr:nth-child("+boxSize+"n) td").css("border-bottom", "solid");
+	$newTable.fadeIn(500);
+}
+
+function hideSolutions(){
+	$('#solutions-wrapper').fadeOut(500, function(){
+		$(this).empty();
+		console.log("index:"+currentPuzzleIndex);
+		$($('#sudoku-board-wrapper').children('table')[currentPuzzleIndex]).fadeIn(500);
+		$('#sudoku-showsolutions-button').val("Show Solutions");
+	});
+}
+
 function processFile(reader){
-	$('#sudoku-board-wrapper').empty();
+	$('#sudoku-board-wrapper').children('table').remove();
 	
 	var text = reader.result;
 
@@ -86,7 +258,14 @@ function processFile(reader){
     	var board = result[0];
     	var numOfZero = result[1];
 
-    	printBoard(board); //print board for debugging
+    	printBoard(board); //print board for debuggingh
+    	puzzles.push({
+    		board:board,
+    		solutions: [],
+    		solutionsX: [],
+    		solutionsY: [],
+    		solutionsXY: []
+    	});
 
     	displayBoard(board, caseNumber);
 
@@ -99,12 +278,15 @@ function processFile(reader){
     	}
 
     	var solutionStr = "";
-    	for(sudokusolution = 0; sudokusolution < 3; sudokusolution++){
+    	for(sudokusolution = 0; sudokusolution < 4; sudokusolution++){
 			
 			if(sudokusolution==0)
 				solutionStr +=  "============== NORMAL SUDOKU ===============\n";
 			else if(sudokusolution==1) solutionStr +=  "============== SUDOKU X ===============\n";
-			else solutionStr += "============== SUDOKU Y ===============\n";
+			else if(sudokusolution==2) solutionStr += "============== SUDOKU Y ===============\n";
+			else if(sudokusolution==3) solutionStr += "============== SUDOKU XY ===============\n";
+
+			var solutions = [];
 			
 			count = 0;
 			move=start=0;
@@ -122,19 +304,28 @@ function processFile(reader){
 						for(i=1;i<move;i++)
 							solutionStr += option[i][nopts[i]]+" ";
 						solutionStr += "\n\n";
-				
+						
+						var solution = [];
+
 						for(i=0;i<sizeOfBoard;i++){
+							var solutionRow = [];
 							for(j=0;j<sizeOfBoard;j++){
 								if(board[i][j]==0){
-									solutionStr += option[a][nopts[a]]+" ";
+									var val = option[a][nopts[a]];
+									solutionStr += val+" ";
+									solutionRow.push(val);
 									a++;
 								}
-								else
+								else{
 									solutionStr += board[i][j] + " ";
+									solutionRow.push(board[i][j]);
+								}
 							}
 							solutionStr += "\n";
+							solution.push(solutionRow);
 						}
-						solutionStr += "\n\n";			
+						solutionStr += "\n\n";	
+						solutions.push(solution);
 					}
 					else if(move==1){
 						for(candidate=sizeOfBoard;candidate>=1;candidate--){
@@ -207,6 +398,29 @@ function processFile(reader){
 									option[move][++nopts[move]] = candidate;
 							
 							}
+
+							if(row && column && box && ekis && huay && sudokusolution == 3){
+			
+								for(i=move-1;i>=1;i--){
+									if(candidate==option[i][nopts[i]] && (blankSpaces[i-1].x==blankSpaces[move-1].x || 
+										blankSpaces[i-1].y==blankSpaces[move-1].y || (toInt(blankSpaces[i-1].x/sqrt(sizeOfBoard))==toInt(blankSpaces[move-1].x/sqrt(sizeOfBoard)) && 
+											toInt(blankSpaces[i-1].y/sqrt(sizeOfBoard))==toInt(blankSpaces[move-1].y/sqrt(sizeOfBoard))))) break;
+					
+									if(((blankSpaces[move-1].x == blankSpaces[move-1].y && blankSpaces[i-1].x == blankSpaces[i-1].y) || (blankSpaces[move-1].x + blankSpaces[move-1].y == sizeOfBoard - 1 && blankSpaces[i-1].x + blankSpaces[i-1].y == sizeOfBoard - 1)) && (candidate==option[i][nopts[i]])){
+										break;	
+									}
+
+									if(checkHuay2(candidate, option[i][nopts[i]], blankSpaces[move-1], blankSpaces[i-1])){
+										break;	
+									}
+						
+
+								}
+							
+								if(i==0)
+									option[move][++nopts[move]] = candidate;
+							
+							}
 						}
 					}
 			
@@ -216,6 +430,11 @@ function processFile(reader){
 					nopts[move]--;
 				}
 			}
+
+			if(sudokusolution==0) puzzles[caseNumber].solutions = solutions;
+			else if(sudokusolution==1) puzzles[caseNumber].solutionsX = solutions;
+			else if(sudokusolution==2) puzzles[caseNumber].solutionsY = solutions;
+			else if(sudokusolution==3) puzzles[caseNumber].solutionsXY = solutions;
 		
 		}
 		console.log(solutionStr);
@@ -223,8 +442,10 @@ function processFile(reader){
     }
 
     if(numCases > 0){
-    	$('#sudoku-control-panel').fadeIn(500);
+    	$('#sudoku-aside').fadeIn(2000);
     }
+
+    //console.log(puzzles);
 
 }
 
@@ -243,7 +464,7 @@ function printBoard(board){
 }
 /* ==== UI FUNCTIONS ====*/
 function displayBoard(board, caseNumber){
-	$boardWrapper = $('#sudoku-board-wrapper');
+	var $boardWrapper = $('#sudoku-board-wrapper');
 
 	var boardHTML = "<table class='sudoku' id='sudoku-board-caseNumber' style='display:none'>"; 
 
@@ -266,8 +487,12 @@ function displayBoard(board, caseNumber){
 	boardHTML += "</table>";
 	
 	$boardWrapper.append(boardHTML);
+	var $newTable = $boardWrapper.find("table").last();
+	var boxSize = sqrt(board.length);
+	$newTable.find("td:nth-child("+boxSize+"n)").css("border-right", "solid");
+	$newTable.find("tr:nth-child("+boxSize+"n) td").css("border-bottom", "solid");
 	if(caseNumber==0){
-		$boardWrapper.find("table").last().fadeIn(2500);
+		$newTable.fadeIn(2500);
 	}
 }
 

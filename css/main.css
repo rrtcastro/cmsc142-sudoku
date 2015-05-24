@@ -73,13 +73,13 @@ body {
 }
 
 .footer-container,
-.main aside {
+aside {
     border-top: 20px solid #e44d26;
 }
 
 .header-container,
 .footer-container,
-.main aside {
+aside {
     background: #f16529;
 }
 
@@ -131,7 +131,7 @@ nav a:hover {
     font-size: 2em;
 }
 
-.main aside {
+ aside {
     color: white;
     padding: 0px 5% 10px;
 }
@@ -213,7 +213,7 @@ nav a:hover {
    ==================== */
 
     .header-container,
-    .main aside {
+    aside {
         -webkit-box-shadow: 0 5px 10px #aaa;
            -moz-box-shadow: 0 5px 10px #aaa;
                 box-shadow: 0 5px 10px #aaa;
@@ -241,7 +241,7 @@ nav a:hover {
         width: 57%;
     }
 
-    .main aside {
+     aside {
         float: right;
         width: 28%;
     }
